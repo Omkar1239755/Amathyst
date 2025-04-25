@@ -16,7 +16,7 @@
 
 
 
-                                <form id="passwordForm" method="post" action="{{ route('storeregister') }}">
+                             <form id="passwordForm" method="post" action="{{ route('storeregister') }}">
                             @csrf
 
                             <h2 class="register-heading">Register</h2>
