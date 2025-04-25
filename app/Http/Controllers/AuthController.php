@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use  App\Models\User;
+use App\Models\EmailOtp;
+use Illuminate\Support\Facades\Mail;
+
 use Auth;       
 
 
@@ -45,18 +48,18 @@ public function Storeregister(request $request){
 
     $request->validate([
         'name' => 'required|string|max:255',
-        'email' => 'required|string|email|unique:users',
+        'email' => 'required|string|email',
         'country' => 'nullable',
         'birthday' => 'nullable',
         'heard_about_us' => 'nullable',
-        'password' => 'required|confirmed|min:6',
+        'password' => 'required|min:6',
         'terms' => 'accepted',
     ], [
         'terms.accepted' => 'You must accept the Terms & Conditions to register.',
     ]);
 
     
-        User::create([
+    $user =    User::create([
         'name'=>$request->name,
         'email'=>$request->email,
         'country'=>$request->country,
@@ -66,26 +69,115 @@ public function Storeregister(request $request){
 
         ]);
 
-        return redirect()->route('login'); // or wherever you want
 
+        // Log in the user
+         Auth::login($user);
+        // genrate otp
+        $otp = rand(100000,999999);
 
-
-}
-
-
-public function verifyEmail(){
-
-    return view('verifymail');
     
-}
+       $emaildata= EmailOtp::create([
+        'user_id'=>$user->id,
+        'otp'=>$otp,
+        'expires_at' => now()->addMinutes(5),
+        ]);
+ 
+// SEND Mail
+       Mail::raw("Your Otp is:$otp", function($message) use ($user){
+         $message->to($user->email)->subject('Verify your Email - OTP ');
+        });
+
+            // Store email in session
+    session(['email' => $user->email]);
+        return redirect()->route('verify'); 
+ }
 
 
 
-public function SingUp(){
+ public function verifyEmail(){
 
-    return view('signup');
+        // $email = Auth::user()->email;
+        return view('verifyotp');
+ }
+
+
+
+
+    public function verifyOtp(request $request){
+
+ 
+        $email = session('email');
+
+        if (!$email) {
+            return redirect()->route('register')->withErrors(['email' => 'Session expired. Please register again.']);
+        }
     
-}
+      $user = User::where('email', $email)->first();
+      $userid=$user->id;
+
+        if (!$userid) {
+            return redirect()->back()->withErrors(['otp' => 'User not found.']);
+        }
+
+        $otpEntry = EmailOtp::where('user_id', $userid)
+            ->where('otp', $request->otp)
+            ->where('expires_at', '>', now())
+            ->first();
+     
+
+        if ($otpEntry) {
+            
+            $otpEntry->delete();
+    
+            return redirect()->route('signup')->with('success', 'Email verified successfully. Please login.');
+        }
+    
+        return redirect()->back()->withErrors(['otp' => 'Invalid or expired OTP']);
+   
+
+   }
+
+ public function login(){
+
+    return view('login');
+
+    }
 
 
-}
+public function loginStore(request $request){
+
+        // Validate input
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string|min:6',
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        // Attempt login
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->route('dashboard')->with('success', 'Logged in successfully!');
+        }
+
+        // If login fails
+        return back()->withErrors([
+            'email' => 'Invalid credentials.',
+        ])->onlyInput('email');
+    }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+

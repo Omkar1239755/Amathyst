@@ -21,8 +21,7 @@
           </div>
 
           <div
-            class="col-md-6 right-signup align-items-center justify-content-center h-100"
-          >
+            class="col-md-6 right-signup align-items-center justify-content-center h-100" >
             <div class="content-sighnup">
               <div class="textright-sign">
                 <h5>Who Are You Signing Up As?</h5>
@@ -43,6 +42,7 @@
                   <p class="description-assoite">
                     I want to explore and connect with companions for meaningful experiences and fun dates.
                   </p>
+
                 </div>
                 <i class="fas fa-arrow-right assoiate-icon"></i>
               </div>

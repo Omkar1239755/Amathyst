@@ -69,7 +69,7 @@
        
 
           <div class="log text-center mt-3">
-            Don’t have an account? <a href="register.html">Create an Account</a>
+            Don’t have an account? <a href="{{route('register')}}">Create an Account</a>
           </div>
         </div>
       </div>

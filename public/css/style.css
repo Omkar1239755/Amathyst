@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap");
 
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+
+
 a.nav-link:hover {
     color: #FFFF;
 }
@@ -14,14 +17,12 @@ a.bbtn-loginn {
     margin-right: 10px;
 }
 
-
-
 ul.navbar-nav {
     gap: 14px;
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-family: Crimson Pro;
+    font-family: Crimson;
     font-weight: 400;
     font-size: 18px;
     padding-left: 26px;
@@ -33,6 +34,9 @@ a.nav-link {
 
 .bg-purple-custom {
     background-color: #8b5cf6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .btn-purple {
@@ -56,7 +60,6 @@ header.bg-purple-custom {
 .btn-outline-purple:hover {
     background-color: #f8f9fa;
 }
-
 
 .bbtn-loginn {
     padding: 7px 30px;
@@ -290,6 +293,16 @@ p.card-text {
     color: #a084e8;
     background: #f3f0fb;
 }
+.sign-viewbtn:hover {
+    background-color: #8b5cf6;
+    color: #FFF;
+    cursor: pointer;
+   
+}
+
+
+
+
 
 .text-center.button-viewdiv {
     padding-top: 40px;
@@ -684,9 +697,15 @@ section.register-section {
     vertical-align: middle;
 }
 
+.form-check{
+    font-size: 20px;
+    /* margin: 4px; */
+}
+
 .form-check-input:checked {
     background-color: #5f42a9;
     border-color: #5f42a9;
+   
 }
 
 .d-flex.birthday input {
@@ -696,59 +715,42 @@ section.register-section {
 /* Ending css Register */
 
 
-
-/* verify email */
-
-.verify-container {
-    /* min-height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 50px;
-}
-
-.verify-text h4 {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 126%;
-    letter-spacing: -0.5px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.verify-text p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-}
+/* OTP send css */
 
 .verify-image img {
     max-width: 100%;
     height: auto;
 }
 
-.col-md-6.text-center.verify-image.mb-4.mb-md-0 {
-    background-color: #f8f5ff;
+
+
+.otp-container {
+    margin:0px;
+    padding: 50px;
 }
 
-p.email-highlight {
-    color: #1a0e25;
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 126%;
-    letter-spacing: -0.5px;
+
+.otp-input {
     text-align: center;
-    vertical-align: middle;
+    font-size: 24px;
+    padding: 10px;
+    width: 50px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(237, 240, 249, 1);
 }
 
+.otp-input:focus {
+    outline: none;
+    border-color: #5f42a9;
+}
 
-a.resendmail-btn {
+.text-center.otp-btn {
+    padding-top: 70px;
+}
+
+a.otp-btn {
     background: #5f42a9;
     border: none;
     color: #fff;
@@ -759,28 +761,64 @@ a.resendmail-btn {
     letter-spacing: 0px;
     vertical-align: middle;
     border-radius: 12px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 175px;
     text-decoration: none;
 }
 
-
-
-
-.emailverify {
-    padding-left: 50px;
+.resend {
+    margin-top: 20px;
+    text-align: center;
 }
 
-p.just-pargrap {
+.resend a {
+    color: #5f42a9;
+    text-decoration: none;
+}
+
+.resend p {
     font-family: Poppins;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 160%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
+
 }
 
-/* Ending css verify mail */
+.otp-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.otp-heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 126%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.otp-para {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #1a0e25;
+    padding: 6px;
+
+}
+
+/* Ending css otp */
 
 
 
@@ -1064,7 +1102,6 @@ section.associateprofile {
 .btn-assoiateprofile {
 
     background-color: #5f42a9;
-
     border-radius: 12px;
     font-family: Poppins;
     font-weight: 600;
@@ -1078,12 +1115,12 @@ section.associateprofile {
     padding: 8px;
 
     text-decoration: none;
-    padding: 10px 200px;
+    padding: 10px 255px;
 }
 
 /* model assoiate */
 
-img.modelunic-icon{
+img.modelunic-icon {
     width: 19px;
 }
 
@@ -1247,9 +1284,30 @@ button#saveInterestBtn {
 }
 
 .interest-btn.selected {
-    background-color: #1c3aa9;
+    background-color: #5f42a9;
     color: #fff;
 }
+
+/* Hobbies model */
+ul.hobbies-model {
+    list-style: none;
+    display: contents;
+}
+
+ul.hobbies-model li {
+    border: 1px solid #5f42a9;
+    ;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+ul.hobbies-model li:hover {
+    background-color: #5f42a9;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 
 
@@ -1359,7 +1417,7 @@ section.companion-contained {
     padding: 8px;
 
     text-decoration: none;
-    padding: 10px 200px;
+    padding: 10px 255px;
 }
 
 
@@ -1528,14 +1586,7 @@ section.companion-contained {
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
-    transition: 0.3s;
 }
-
-.image-label:hover img {
-    opacity: 0.5;
-}
-
-
 
 .form-input {
     position: relative;
@@ -1551,21 +1602,19 @@ section.companion-contained {
     pointer-events: none;
 }
 
-
-
 .image-upload-one {
     padding: 20px;
 }
 
 .preview-box {
-    padding: 10px;
+    max-width: 150px;
     min-height: 120px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+
 }
 
 .preview-box img {
@@ -1580,7 +1629,11 @@ section.companion-contained {
     position: relative;
 }
 
-.imgRemove {
+
+button.imgRemove {
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1589,7 +1642,6 @@ section.companion-contained {
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     color: #5f42a9;
 }
 
@@ -1685,12 +1737,37 @@ section.companion-contained {
     padding-top: 35px;
 }
 
+.preview-boxverifyy {
+    min-height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(95 66 169);
+}
+
+.preview-boxverifyy img {
+    object-fit: contain;
+    width: 100%;
+    height: 140px;
+}
+
+button.img-remove-btn.img-remove-btn {
+    position: absolute;
+    bottom: 120px;
+    right: -8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px 10px;
+}
 
 
 /* captcha css */
 
 .robot {
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     padding-top: 14px;
 }
@@ -1707,20 +1784,6 @@ section.companion-contained {
 
 }
 
-input[type="checkbox"] {
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border: 2px solid #C1C1C1;
-    margin: 0px 14px 0px 14px;
-}
-
-input[type="checkbox"]:checked::before {
-    content: url(https://img.icons8.com/?size=20&id=27&format=png&color=1e5180);
-    display: block;
-    line-height: 20px;
-    padding: 0.05rem 0.6rem 0rem 0.05em;
-}
 
 .logo-captcha {
     display: block;
@@ -1745,6 +1808,47 @@ input[type="checkbox"]:checked::before {
     text-align: center;
     line-height: 0.1rem;
 }
+
+.form-check-input:checked {
+    background-color: #5f42a9;
+    border-color: #5f42a9;
+}
+
+/* Add check icon when checked */
+/* .captcha-checkbox input[type="checkbox"]:checked{
+    background-color: #5f42a9 !important;
+    border-color: #5f42a9;
+} */
+
+.captcha-checkbox input[type="checkbox"]:checked + .custom-checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    background-color: #5f42a9;
+    border-color: #5f42a9;
+}
+
+.boxcap-container input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #C1C1C1;
+    margin: 0px 14px 0px 14px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* model profile */
@@ -1838,6 +1942,8 @@ input[type="checkbox"]:checked::before {
 
 /* Login-form css */
 
+
+
 .welcome-heading {
     font-family: Poppins;
     font-weight: 600;
@@ -1861,11 +1967,12 @@ input[type="checkbox"]:checked::before {
 .login-form {
     padding: 50px 50px;
 }
-.Remember-me {
-    font-size: 14px;
-    color: #1a0e25;
-}
 
+.Remember-me {
+    font-size: 15px;
+    color: #1a0e25;
+    margin: 4px;
+}
 
 .forgot-link .forgot-pass {
     font-size: 14px;
@@ -1963,7 +2070,7 @@ a.btn-sendlink {
     width: 100px;
     text-decoration: none;
     padding: 10px 210px 10px 210px;
-    margin-right: 55px;
+
 
 
 }
@@ -1981,7 +2088,7 @@ a.btn-sendlink {
 
 
 
-/* start css Create password */
+/* start css new Create password */
 
 
 
@@ -1992,6 +2099,26 @@ a.btn-sendlink {
 .create-password {
     padding-left: 35px;
     padding-top: 130px;
+}
+
+.create-password h2 {
+    color: #1a0e25;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.create-password p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
 }
 
 a.reset-btnpaswrd {
@@ -2005,9 +2132,8 @@ a.reset-btnpaswrd {
     cursor: pointer;
     border: none;
     padding: 8px;
-    width: 100px;
     text-decoration: none;
-    padding: 10px 260px 10px 210px;
+    padding: 10px 230px 10px 230px;
 
 }
 
@@ -2439,37 +2565,112 @@ footer.foot-footer {
     }
 
 
+    /* OTP verify responsive css */
+
+
+    .otp-container {
+        padding: 24px 24px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .otp-para {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .otp-heading {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    a.otp-btn {
+        padding: 10px 100px;
+    }
+
+    .otp-input {
+        text-align: center;
+        font-size: 24px;
+        padding: 5px;
+        width: 40px;
+        margin: 0px;
+    }
+
+    .resend p {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .text-center.otp-btn {
+        padding-top: 50px;
+    }
 
 
 
 
 
+    /* Forgot your password responsive css mobile */
 
-    /* Verify devices css responsive */
-    .verify-container {
+
+    .forgot-password {
         padding: 24px 24px;
     }
 
-    .emailverify {
-        padding-left: 0px;
+    .forgott-rht {
+        padding-left: 10px;
+        padding-top: 20px;
     }
 
-    .verify-text h4 {
-        font-size: 22px;
+    .forgot-h {
+        font-size: 24px;
     }
 
-    .verify-text p {
-        font-size: 12px;
-    }
-
-    p.email-highlight {
-        font-size: 12px;
-    }
-
-    a.resendmail-btn {
+    .para-forgot {
         font-size: 10px;
-        padding: 10px 10px 10px 10px;
+    }
 
+    .text-center.reset-link {
+        margin-top: 20px;
+    }
+
+    a.btn-sendlink {
+        font-size: 14px;
+        padding: 10px 85px;
+        margin-right: 0px;
+    }
+
+    /* New Create password devices css*/
+
+    .new-password {
+        padding: 24px 24px;
+    }
+
+    .create-password {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .create-password h2 {
+        font-size: 24px;
+    }
+
+    .create-password p {
+        font-size: 12px;
+    }
+
+    .new-pass {
+        padding-top: 0px;
+    }
+
+    .reset-div.text-center {
+        padding-top: 20px;
+    }
+
+    a.reset-btnpaswrd {
+        padding: 10px 85px;
+        font-size: 14px;
     }
 
 
@@ -2678,8 +2879,13 @@ footer.foot-footer {
         margin-left: 0px;
     }
 
-
-
+    .boxcap-container [type="checkbox"] {
+      
+        width: 25px;
+        height: 25px;
+        border: 2px solid #C1C1C1;
+        margin: 0px 14px 0px 14px;
+    }
 
     /* model ready  devices css */
     .modal-content {
@@ -2690,6 +2896,13 @@ footer.foot-footer {
     .modal-content p {
         font-size: 10px;
     }
+
+/* Hide default checkbox */
+.captcha-checkbox input[type="checkbox"] {
+    display: none;
+} */
+
+
 
 
     /* footer devices css  */
@@ -3009,54 +3222,138 @@ footer.foot-footer {
     }
 
 
+    /* OTP verify tablet css */
 
 
-
-
-
-
-    /* Verify tablet css */
-
-    .verify-container {
-        padding: 50px 50px;
-    }
-
-    .verify-image {
+    .verify-image.mb-4.mb-md-0 {
         width: 100%;
         height: 100%;
     }
 
-    .verify-text {
-        width: 100%;
-        padding: 24px 24px;
+    .otp-container {
+        padding: 40px;
+        margin: 0px;
     }
 
-    .verify-text h4 {
+    .otp-heading {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 35px;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .otp-box {
+        justify-content: flex-start;
+    }
+    .otp-text {
+        padding-left: 50px;
+    }
+    .resend {
+        margin-top: 20px;
+        text-align: center;
+        white-space: nowrap;
+        padding-left: 35px;
+    }
+    .text-center.otp-btn {
+        padding-top: 40px;
+    }
+    a.otp-btn {
+        padding: 10px 186px;
+    }
+    .otp-para {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Forgot your password responsive css tablet */
+
+    .forgot-password {
+        padding: 50px 50px;
+    }
+
+    .forgot {
+        width: 100%;
+        height: 100%;
+    }
+
+    .forgott-rht {
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .forgot-h {
         font-size: 35px;
     }
 
-    .verify-text p {
+    .para-forgot {
         font-size: 18px;
     }
 
-    p.email-highlight {
+    .text-center.reset-link {
+        margin-top: 30px;
+    }
+
+    a.btn-sendlink {
+        font-size: 16px;
+        padding: 10px 245px;
+        margin-right: 0px;
+    }
+
+    /* New paassword tablet css */
+
+
+    .create-password {
+        padding-left: 10px;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .create-password h2 {
+        font-size: 35px;
+    }
+
+    .create-password p {
         font-size: 18px;
     }
 
-    .verify-resendmaildiv {
-        padding-top: 20px;
+    .form-label {
+        font-size: 22px;
     }
 
-    a.resendmail-btn {
-        padding: 10px 100px;
-        font-size: 18px;
+    .form-control {
+        font-size: 18px !important;
     }
 
+    .reset-div.text-center {
+        padding-top: 30px;
+    }
 
-
-
-
-
+    a.reset-btnpaswrd {
+        padding: 10px 250px;
+    }
 
     /* Signup page tablet css responsive */
 
