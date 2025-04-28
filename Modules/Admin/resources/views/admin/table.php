@@ -1,6 +1,7 @@
 <?php include('header.php');?>
 <?php include('sidebar.php');?>
 <main>
+	
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container-fluid">
@@ -87,6 +88,7 @@
         </div>
     </section>
 </div>
+
 </main>
 <?php include('footer.php');?>
 

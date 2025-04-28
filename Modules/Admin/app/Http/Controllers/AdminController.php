@@ -5,6 +5,7 @@ namespace Modules\Admin\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\User;
 use App\Models\Admin;
 class AdminController extends Controller
 {
@@ -60,11 +61,9 @@ class AdminController extends Controller
 
     public function adminLogin(request $request){
 
-
         if($request->isMethod('post')){
             $data = $request->all();
-    
-    
+
         $credentiall = $request->validate([
             
         'email'=>'required|email',
@@ -85,8 +84,7 @@ class AdminController extends Controller
                 setcookie('email', '');
                 setcookie('password', '');
             }
-            return('hello');
-            return redirect('admin/dashboard');
+            return redirect('adminstrator/dashboard');
             
         } else {
 
@@ -102,8 +100,12 @@ class AdminController extends Controller
     
     
     public function dashboard(){
+       
+
+        $count = User::count();
+
    
-        return view('admin::admin.dashboard');
+        return view('admin::admin.dashboard',compact('count'));
         
         }
         

@@ -1023,6 +1023,10 @@ a.btnsign-continue {
 
 /*Start css associateprofile  */
 
+span.tag {
+    padding: 15px;
+}
+
 img.image-assoiate {
     width: 100%;
 }
@@ -1130,7 +1134,7 @@ img.modelunic-icon {
 }
 
 
-button#clearallBtn {
+button.clearall-btn{
     padding: 10px 70px;
     margin: 10px;
     background: #FFF;
@@ -1142,7 +1146,7 @@ button#clearallBtn {
     font-size: 14px;
 }
 
-button#saveInterestBtn {
+button.confirmm-selectbtn {
     padding: 10px 50px;
     border: none;
     border-radius: 12px;

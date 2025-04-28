@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/css/dataTables.bootstrap5.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-tagsinput.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/css/fullcalendar-scheduler.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('admin_asset/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('admin_asset/css/custom.css') }}">
+<link rel="stylesheet" href="{{ asset('admin_asset/css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('admin_asset/css/dataTables.bootstrap5.css') }}" />
+<link rel="stylesheet" href="{{ asset('admin_asset/css/bootstrap-tagsinput.css') }}" />
+<link rel="stylesheet" href="{{ asset('admin_asset/css/fullcalendar-scheduler.css') }}" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
 </head>

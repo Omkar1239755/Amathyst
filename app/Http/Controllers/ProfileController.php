@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use  App\Models\User;
+use  App\Models\Hobbie;
+
 
 class ProfileController extends Controller
 {
 
 public function associateProfile(){
 
-return view('associateprofile');
+$data = Hobbie::all();
+
+return view('associateprofile',compact('data'));
 
 }
 

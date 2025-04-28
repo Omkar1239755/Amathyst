@@ -8,14 +8,14 @@
 <body>
 <body>
     <div id="timetracker-layout" class="theme-indigo">
-        @include('admin::partials.sidebar')
+        @include('admin::admin.partials.sidebar')
 
     <div class="main px-lg-4 px-md-4">
-        @include('admin::partials.header')
+        @include('admin::admin.partials.header')
 
         @yield('content')
 
-        @include('admin::partials.footer')
+        @include('admin::admin.partials.footer')
     </div>
 
 

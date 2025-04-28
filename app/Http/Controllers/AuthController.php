@@ -28,7 +28,7 @@ public function loginCheck(request $request){
     if(Auth::attempt($request->only('email','password'))){
 
 
-        return redirect()->route('verify'); // or wherever you want
+        return redirect()->route('signup'); // or wherever you want
 
 
     }

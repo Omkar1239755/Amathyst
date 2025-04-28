@@ -1,15 +1,15 @@
 
 <footer class="main-footer"> <strong>Copyright &copy; 2024</strong> All rights reserved.  </footer>
  
-<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/js/demo.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/twitter-bootstrap.js') }}"></script>
-<script src="{{ asset('assets/js/js_dataTables.js') }}"></script>
-<script src="{{ asset('assets/js/dataTables.bootstrap5.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap-tagsinput.min.js') }}"></script>
-<script src="{{ asset('assets/js/fullcalendar-scheduler.min.js') }}"></script>
-<script src="{{ asset('assets/js/moment.min.js') }}"></script>
+<script src="{{ asset('admin_asset/js/jquery.min.js') }}"></script>
+<script src="{{ asset('admin_asset/js/demo.js') }}"></script>
+<script src="{{ asset('admin_asset/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('admin_asset/js/twitter-bootstrap.js') }}"></script>
+<script src="{{ asset('admin_asset/js/js_dataTables.js') }}"></script>
+<script src="{{ asset('admin_asset/js/dataTables.bootstrap5.js') }}"></script>
+<script src="{{ asset('admin_asset/js/bootstrap-tagsinput.min.js') }}"></script>
+<script src="{{ asset('admin_asset/js/fullcalendar-scheduler.min.js') }}"></script>
+<script src="{{ asset('admin_asset/js/moment.min.js') }}"></script>
 
 <script>
 	$(document).ready(function(){
@@ -145,6 +145,8 @@ var arrays = [{
   "start": "2024-04-02 00:00:00",
   "color": "#FFFF00"
 }]
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
