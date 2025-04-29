@@ -36,28 +36,26 @@
                                 </li>
 
                                 <li class="nav-item"> 
-                                    <a href="{{route('hobbie-view')}}" class="nav-link">
+                                    <a href="{{route('additionalHobbie')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                         <p>Additional-Hobbies</p>
                                     </a> 
                                 </li>
 
                                 <li class="nav-item"> 
-                                    <a href="{{route('hobbie-view')}}" class="nav-link">
+                                    <a href="{{route('personaltrait')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                         <p>Personal-Traits</p>
                                     </a> 
                                 </li>
 
                                 <li class="nav-item"> 
-                                    <a href="{{route('hobbie-view')}}" class="nav-link">
+                                    <a href="{{route('activity')}}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                         <p>Favourite-Activities </p>
                                     </a> 
                                 </li>
 
-
-                                
 
 
                         <!-- <li class="nav-item"> 

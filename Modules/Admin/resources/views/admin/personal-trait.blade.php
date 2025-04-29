@@ -23,7 +23,7 @@
                  <div class="col-lg-12">
                 	<div class="card">
                 		<div class="card-header d-flex justify-content-between align-items-center">
-                			<h3 class="card-title">Additional-Hobbie</h3>
+                			<h3 class="card-title">Personal-Traits</h3>
 
                             <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #5F42AA;">
                                 Add Category
@@ -35,20 +35,19 @@
 					   				 		 <thead>
 							            <tr>
 							                <th>S.No</th>
-							                <th>Additional-Hobbie</th>
+							                <th>Personal-Traits</th>
                                             <th>Image</th>
 							                <th>Action</th>
 							            </tr>
 							        	</thead>
 							       		<tbody>
-                                                      
                                            @foreach ($data as $index => $hobby)
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
-                                                <td>{{ $hobby->additional_hobbie }}</td>
+                                                <td>{{ $hobby->personal_trait }}</td>
                                                 <td>
                                                     @if ($hobby->image)
-                                                        <img src="/uploads/additional_hobbies/{{ $hobby->image }}" width="60" alt="{{ $hobby->hobbie }}">
+                                                        <img src="/uploads/personaltrait/{{ $hobby->image }}" width="50" alt="{{ $hobby->hobbie }}">
                                                     @else
                                                         No Image
                                                     @endif
@@ -82,13 +81,13 @@
                                         <!-- Hobby Category Name -->
                                         <div class="mb-3">
                                             <label for="hobby_name" class="form-label">Additional Hobby Name</label>
-                                            <input type="text" class="form-control" id="hobby_name" name="hobby_name" placeholder="Enter Hobby Category" required>
+                                            <input type="text" class="form-control" id="hobby_name" name="trait_name" placeholder="Enter Personall Trait" required>
                                         </div>
 
                                         <!-- Hobby Image -->
                                         <div class="mb-3">
                                             <label for="hobby_image" class="form-label">Upload Image</label>
-                                            <input type="file" class="form-control" id="hobby_image" name="hobby_image" required>
+                                            <input type="file" class="form-control" id="hobby_image" name="trait_image" required>
                                         </div>
                                         </div>
 
@@ -121,7 +120,7 @@ $(document).ready(function() {
         $.ajax({
                 
             type: 'POST',
-            url: "{{ url('adminstrator/additional-hobbie-store') }}",  // Set your correct route here
+            url: "{{ url('adminstrator/personal-traits-store') }}",  
             data: formData,
 
             processData: false,  

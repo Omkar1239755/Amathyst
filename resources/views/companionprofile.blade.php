@@ -515,8 +515,5 @@
 </script>
 
 
-</body>
-
-</html>
 
 @endsection

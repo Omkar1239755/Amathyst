@@ -1,0 +1,3591 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+
+
+a.nav-link:hover {
+    color: #FFFF;
+}
+
+.login-navv {
+    /* margin: auto; */
+    padding-left: 470px;
+}
+
+a.bbtn-loginn {
+    margin-right: 10px;
+}
+
+ul.navbar-nav {
+    gap: 14px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Crimson;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 26px;
+}
+
+a.nav-link {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.bg-purple-custom {
+    background-color: #8b5cf6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.btn-purple {
+    background-color: #6b21a8;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #7e22ce;
+}
+
+header.bg-purple-custom {
+    padding: 10px;
+}
+
+.btn-outline-purple {
+    background-color: white;
+    color: #6b21a8;
+}
+
+.btn-outline-purple:hover {
+    background-color: #f8f9fa;
+}
+
+.bbtn-loginn {
+    padding: 7px 30px;
+    border-radius: 49px;
+    border: none;
+    background-color: #9379d9;
+    color: #ffffff;
+    font-family: "Crimson Pro", serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.bbtn-loginn:hover {
+    background-color: #7e67cb;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bbtn-registerr {
+    border-radius: 49px;
+    padding: 7px 30px;
+    border: none;
+    background-color: #ffffff;
+    color: #a084e8;
+    font-family: "Crimson Pro", serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.bbtn-registerr:hover {
+    background-color: #f3edff;
+    color: #7b5fcc;
+    text-decoration: none;
+}
+
+/* main Hero section */
+.hero {
+    background-image: url("/assests/images/banner.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 524px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #200c51b0;
+}
+
+.content-text.text-center {
+    margin-top: 228px;
+    position: relative;
+}
+
+.heading-parent {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 92%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sub-headingpara {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 124%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-btn {
+    width: 243;
+    height: 62;
+    gap: 10px;
+    border-radius: 78px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: #a084e8;
+    color: #ffffff;
+}
+
+/* section first css */
+
+.Howit-works {
+    padding: 40px 40px;
+}
+
+img.frame-image {
+    width: 100%;
+    height: 600px;
+    gap: 10px;
+    border-radius: 40px;
+}
+
+.frame-heading {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+
+/* card second sec  css */
+
+section.featured-companions {
+    background: rgba(147, 121, 216, 0.11);
+    padding: 60px 60px;
+}
+
+.cards-featured h2 {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(26, 22, 25, 1);
+}
+
+.cards-featured p {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 2%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+.discover-yourbest h2 {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(26, 22, 25, 1);
+}
+
+.discover-yourbest p {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: rgba(26, 22, 25, 1);
+}
+
+
+.cards.text-center {
+    padding-top: 70px;
+}
+
+.card {
+    width: 18rem;
+    padding: 20px;
+    margin: auto;
+    background: #a084e8;
+}
+
+h5.card-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+p.card-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+.card {
+    margin: 10px;
+}
+
+.sign-viewbtn {
+    width: 290;
+    height: 70;
+    gap: 10px;
+    border-radius: 78px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #a084e8;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #a084e8;
+    background: #f3f0fb;
+}
+.sign-viewbtn:hover {
+    background-color: #8b5cf6;
+    color: #FFF;
+    cursor: pointer;
+   
+}
+
+
+
+
+
+.text-center.button-viewdiv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* card second css */
+
+section.discoverbest-companion {
+    padding: 50px 50px;
+}
+
+.discover-yourbestcards {
+    padding: 40px 40px;
+}
+
+.seccards-content {
+    gap: 20px;
+    margin: 10px;
+}
+
+.seccard-row {
+    gap: 20px;
+    margin: 10px;
+}
+
+.card-sec {
+    padding: 20px;
+    margin: auto;
+    background: #e2d7fe;
+    border-radius: 30px;
+}
+
+h5.sec-text {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+/* Four section */
+section.interestwith-gems {
+    background: #f3f0fb;
+    padding: 40px 40px;
+}
+
+.gemscard {
+    justify-content: center;
+    padding: 30px 40px;
+    margin: auto;
+    gap: 20px;
+}
+
+.interestwith-gems-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.heading-gems h5 {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-gems p {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+/* gems card css */
+
+.gemscard {
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gem-card {
+    background-color: rgba(96, 69, 164, 1);
+    color: white;
+    border-radius: 1rem;
+    padding: 35px;
+    width: 350px;
+    min-height: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.gem-img {
+    width: 100px;
+}
+
+.gems {
+    font-size: 1.1rem;
+}
+
+.description {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.btn-purplegem {
+    background-color: rgba(160, 132, 232, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 163px;
+    padding: 10px 10px 10px 10px;
+    gap: 10px;
+    border-radius: 78px;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+
+}
+
+.btn-purplegem:hover {
+    background-color: rgba(160, 132, 232, 1);
+    color: #FFF;
+
+}
+
+.rupeegems-txt h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+}
+
+.rupeegems-txt p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+/* end css gems card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section five */
+section.frequasked-questions {
+    padding: 40px 40px;
+}
+
+.faq-text h2 {
+    font-family: Crimson Pro;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1a1619;
+}
+
+.faq-text p {
+    font-family: Crimson Pro;
+    font-weight: 300;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.faq-box p {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.faq-box h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.frequasked-parentdiv {
+    background: rgba(243, 240, 251, 1);
+    border-radius: 60px 60px 10px 0px;
+    padding-top: 70px;
+}
+
+.swiper-slide.swiper-slide-active {
+    padding: 15px 25px 15px 25px;
+}
+
+.boxes {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.faq-box {
+    background-color: #e2d7ed;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.swiper-pagination-bullet-active {
+    /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
+    background: rgba(160, 132, 232, 1);
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Register css */
+
+section.register-section {
+    padding: 50px 50px;
+}
+
+.register-section {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.register-left {
+    background-color: #f8f5ff;
+    padding: 50px;
+    text-align: center;
+}
+
+.register-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.register-form {
+    padding-left: 60px;
+}
+
+
+.form-label {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+.form-check a {
+    color: #5f42a9;
+    text-decoration: none;
+}
+
+.btnform-register {
+    background-color: #5f42a9;
+    top: 1013px;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    text-decoration: none;
+    padding: 10px 273px;
+}
+
+.form-text-small {
+
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.login-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: rgba(95, 66, 169, 1);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.register-heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 126%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.para-register {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.form-check{
+    font-size: 20px;
+    /* margin: 4px; */
+}
+
+.form-check-input:checked {
+    background-color: #5f42a9;
+    border-color: #5f42a9;
+   
+}
+
+.d-flex.birthday input {
+    margin: 5px;
+}
+
+/* Ending css Register */
+
+
+/* OTP send css */
+
+.verify-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.otp-container {
+    margin:0px;
+    padding: 50px;
+}
+
+
+.otp-input {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    width: 50px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(237, 240, 249, 1);
+}
+
+.otp-input:focus {
+    outline: none;
+    border-color: #5f42a9;
+}
+
+.text-center.otp-btn {
+    padding-top: 70px;
+}
+
+a.otp-btn {
+    background: #5f42a9;
+    border: none;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    border-radius: 12px;
+    padding: 10px 175px;
+    text-decoration: none;
+}
+
+.resend {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resend a {
+    color: #5f42a9;
+    text-decoration: none;
+}
+
+.resend p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.otp-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.otp-heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 126%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.otp-para {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #1a0e25;
+    padding: 6px;
+
+}
+
+/* Ending css otp */
+
+
+
+
+/* Signup page css */
+
+section.signup {
+    padding: 50px 50px;
+}
+
+.content-sighnup {
+    padding-top: 80px;
+    padding-left: 45px;
+}
+
+.signup-left {
+    background-color: #f8f5ff;
+    padding: 50px;
+    text-align: center;
+}
+
+.signup-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textright-sign h5 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 123%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.textright-sign h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 123%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.textright-sign p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+
+.assoite-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 1px solid #cac8cc;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.assoite-link:hover {
+    background-color: rgb(95 66 169);
+    color: #ffffff;
+}
+
+.btn-assoiate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+.champion-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: 1px solid #cac8cc;
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+.champion-link:hover {
+    background-color: rgb(95 66 169);
+    color: #ffffff;
+}
+
+.assoiate-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.assoite-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+}
+
+.title-iam {
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.description-assoite {
+    margin: 4px 0 0 0;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    /* color: rgba(255, 255, 255, 1); */
+}
+
+.assoiate-icon {
+    font-size: 1rem;
+}
+
+.twoo-btns {
+    padding-top: 50px;
+}
+
+
+
+.btn-champion {
+    margin-top: 35px;
+}
+
+.champion-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-champion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.descri-champion {
+    margin: 4px 0 0 0;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: rgba(26, 14, 37, 1);
+}
+
+.title-champion {
+    margin: 0;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #000;
+}
+
+a.btnsign-continue {
+    background: rgba(95, 66, 169, 1);
+    color: #fff;
+    padding: 10px 261px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.sign-continue {
+    padding-top: 41px;
+}
+
+/* Ending css signup */
+
+
+
+/*Start css associateprofile  */
+
+span.tag {
+    padding: 15px;
+}
+
+img.image-assoiate {
+    width: 100%;
+}
+
+section.associateprofile {
+    padding: 50px 50px;
+    background: #ffffff;
+}
+
+
+.assoiatee-right {
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.profile-assoiate {
+    border: 1px solid #cac8cc;
+    padding: 25px 0px;
+    border-radius: 20px;
+}
+
+.assoiate-head h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+
+}
+
+.assoiate-head p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.profile-assoiate p {
+    padding-top: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.upload-btn {
+    gap: 10px;
+    border-radius: 27px;
+    padding-top: 5px;
+    padding: 5px 50px;
+    border: 1px solid rgba(95, 66, 169, 1);
+    background: #ffffff;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(95, 66, 169, 1);
+}
+
+
+.assoit-btnn {
+    padding-top: 35px;
+}
+
+.btn-assoiateprofile {
+
+    background-color: #5f42a9;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+
+    text-decoration: none;
+    padding: 10px 255px;
+}
+
+/* model assoiate */
+
+img.modelunic-icon {
+    width: 19px;
+}
+
+.interest-btn.selected {
+    background-color: #5f42a9;
+    color: #fff;
+}
+
+
+button.clearall-btn{
+    padding: 10px 70px;
+    margin: 10px;
+    background: #FFF;
+    border: 1px solid #5f42a9;
+    color: #5f42a9;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+button.confirmm-selectbtn {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 12px;
+    margin: 10px;
+    background-color: #5f42a9;
+    color: #ffffff;
+
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+
+}
+
+.modal-contentselect {
+    position: relative;
+    background: #f8f5ff;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 590px;
+    /* width: 36%; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 50px 26px 50px 26px;
+    cursor: pointer;
+}
+
+
+.modal-contentselect h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+}
+
+.modal-contentselect p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+/* Remove default arrow */
+.accordion-button::after {
+    display: none;
+}
+
+/* Clean card-style with border and rounded edges */
+.accordion.custom-accordion .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+/* Accordion button styling */
+.accordion-button.custom-toggle-icon {
+    background-color: #fff;
+    color: #1a0e25;
+    border: none;
+    box-shadow: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    position: relative;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Plus (+) and minus (–) icon */
+.accordion-button.custom-toggle-icon::before {
+    content: '+';
+    position: absolute;
+    right: 1.5rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a0e25;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.custom-toggle-icon:not(.collapsed)::before {
+    content: '–';
+}
+
+/* Body padding and style */
+.accordion-body {
+    padding: 0;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #1a0e25;
+}
+
+/* model button css */
+#interestDisplay .tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 14px;
+    position: relative;
+}
+
+#interestDisplay .tag .remove-tag {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #5f42a9;
+    font-weight: bold;
+}
+
+.interest-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.interest-btn {
+    padding: 5px 10px;
+    border: 1px solid #5f42a9;
+    background-color: #FFF;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+
+
+}
+
+.interest-btn.selected {
+    background-color: #5f42a9;
+    color: #fff;
+}
+
+/* Hobbies model */
+ul.hobbies-model {
+    list-style: none;
+    display: contents;
+}
+
+ul.hobbies-model li {
+    border: 1px solid #5f42a9;
+    ;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+ul.hobbies-model li:hover {
+    background-color: #5f42a9;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Ending css associateprofile  */
+
+
+/* Championgirl-profile css start */
+
+
+.col-md-6.championn-left {
+    background: #f8f5ff;
+}
+
+img.image-companion {
+    width: 100%;
+}
+
+section.companion-contained {
+    padding: 50px 50px;
+    background: #ffffff;
+}
+
+.championn-right {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+.profile-championgirl {
+    border: 1px solid #cac8cc;
+    padding: 25px 0px;
+    border-radius: 20px;
+}
+
+.champion-head h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.champion-head p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+
+
+
+.profile-championgirl p {
+    padding-top: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.uploadchamp-btn {
+    gap: 10px;
+    border-radius: 27px;
+    padding-top: 5px;
+    padding: 5px 50px;
+    border: 1px solid rgba(95, 66, 169, 1);
+    background: #ffffff;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(95, 66, 169, 1);
+}
+
+
+.champpp-btnn {
+    padding-top: 35px;
+}
+
+.btn-championgirll {
+
+    background-color: #5f42a9;
+
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+
+    text-decoration: none;
+    padding: 10px 255px;
+}
+
+
+.input-wrapperpro {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-headingtell {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    pointer-events: none;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.customprofile-textarea {
+    padding-top: 32px;
+    padding-left: 12px;
+    height: 115px;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    padding-top: 50px;
+
+
+}
+
+/* Progress Bar Container */
+.progress-step-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 4px;
+    width: 590px;
+
+}
+
+/* Individual Step Blocks */
+.step-block {
+    flex: 1;
+    height: 100%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active Step Color */
+.step-block.active {
+    background-color: #5f42a9;
+}
+
+
+
+
+.form-input {
+    position: relative;
+    background: #fff;
+    border: 2px dashed #5f42a9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-input input {
+    display: none;
+}
+
+.image-label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.form-input img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0.6;
+    border-radius: 8px;
+}
+
+.champ-uploadprofile {
+
+    gap: 30px;
+    padding: 20px 100px;
+}
+
+/* second step css */
+
+.uploadsss {
+    border: 1px solid #ccc;
+    padding: 40px 10px;
+    /* box-shadow: 0 4px 10px rgba(202, 200, 204, 1); */
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+.secondchamp-step {
+    padding-top: 110px;
+}
+
+.showmore-heading h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25e0;
+}
+
+.showmore-heading p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25e0;
+}
+
+
+.form-input {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    background: #fff;
+    border: 2px dashed rgba(95, 66, 169, 1);
+    ;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-label input[type="file"] {
+    display: none;
+}
+
+.image-label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.form-input {
+    position: relative;
+}
+
+.preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgRemove i {
+    pointer-events: none;
+}
+
+.image-upload-one {
+    padding: 20px;
+}
+
+.preview-box {
+    max-width: 150px;
+    min-height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.preview-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.form-input {
+    width: 150px;
+    position: relative;
+}
+
+
+button.imgRemove {
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    color: #5f42a9;
+}
+
+.preview-box i {
+    font-size: 15px;
+    color: #5f42a9;
+}
+
+.preview-box p {
+    font-size: 15px;
+    color: #5f42a9;
+}
+
+
+.step-block {
+    width: 30px;
+    height: 5px;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.step-block.active {
+    background-color: 5f42a9;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+/* ending second step */
+
+
+
+/* 3rd step css */
+
+
+.verfy-champ {
+    border: 1px solid #ccc;
+    padding: 60px 60px;
+    /* box-shadow: 0 4px 10px rgba(202, 200, 204, 1); */
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 35px;
+}
+
+.text-chmpverify h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25e0;
+}
+
+
+.text-chmpverify p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.nationalid-input {
+    padding: 10px;
+    border: 2px dotted rgba(95, 66, 169, 1);
+    border-radius: 20px;
+
+}
+
+.format-idpara {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.thirdchamp-step {
+    padding-top: 35px;
+}
+
+.preview-boxverifyy {
+    min-height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(95 66 169);
+}
+
+.preview-boxverifyy img {
+    object-fit: contain;
+    width: 100%;
+    height: 140px;
+}
+
+button.img-remove-btn.img-remove-btn {
+    position: absolute;
+    bottom: 120px;
+    right: -8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+
+/* captcha css */
+
+.robot {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 14px;
+}
+
+.boxcap-container {
+    display: flex;
+    background-color: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    width: 300px;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+
+.logo-captcha {
+    display: block;
+    margin-left: 65%;
+    padding-top: 4px;
+}
+
+.captcha-text p {
+    padding-top: 10px;
+    font-size: 9px;
+}
+
+.captcha-text-tos {
+    display: block;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 80px;
+}
+
+.captcha-container {
+    margin-right: 10px;
+    text-align: center;
+    line-height: 0.1rem;
+}
+
+.form-check-input:checked {
+    background-color: #5f42a9;
+    border-color: #5f42a9;
+}
+
+/* Add check icon when checked */
+/* .captcha-checkbox input[type="checkbox"]:checked{
+    background-color: #5f42a9 !important;
+    border-color: #5f42a9;
+} */
+
+.captcha-checkbox input[type="checkbox"]:checked + .custom-checkmark::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    background-color: #5f42a9;
+    border-color: #5f42a9;
+}
+
+.boxcap-container input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #C1C1C1;
+    margin: 0px 14px 0px 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* model profile */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-content h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 126%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25;
+
+}
+
+.modal-content p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.gotodashboard-btn {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: #5f42a9;
+    color: #ffffff;
+    padding: 10px 25px 10px 25px;
+    border-radius: 12px;
+}
+
+.ready-user {
+    background-color: #5f42a9;
+    padding: 35px 40px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.btn-gotodash {
+    padding-top: 20px;
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-content {
+    position: relative;
+    background: #f8f5ff;
+    padding: 40px 34px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 518px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Login-form css */
+
+
+
+.welcome-heading {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.login-para {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+.login-form {
+    padding: 50px 50px;
+}
+
+.Remember-me {
+    font-size: 15px;
+    color: #1a0e25;
+    margin: 4px;
+}
+
+.forgot-link .forgot-pass {
+    font-size: 14px;
+    color: #5f42a9;
+    text-decoration: none;
+}
+
+.forgot-link .forgot-pass:hover {
+    text-decoration: underline;
+}
+
+.login-btndiv {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+
+a.btnform-login {
+    background-color: #5f42a9;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    width: 100px;
+    text-decoration: none;
+
+    padding: 10px 250px;
+
+}
+
+.Login-log {
+    padding-left: 60px;
+    padding-top: 110px;
+}
+
+.log.text-center.mt-3 a {
+    color: #5f42a9;
+}
+
+/* Ending css login  */
+
+
+
+
+/* Css Forgott Password */
+
+.forgot-password {
+    padding: 50px 50px;
+}
+
+.forgott-rht {
+    padding-left: 35px;
+    padding-top: 130px;
+}
+
+
+.forgot-h {
+    color: #1a0e25;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+
+}
+
+.para-forgot {
+    color: #1a0e25;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+
+}
+
+a.btn-sendlink {
+    background-color: #5f42a9;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    width: 100px;
+    text-decoration: none;
+    padding: 10px 210px 10px 210px;
+
+
+
+}
+
+.text-center.reset-link {
+    margin-top: 80px;
+}
+
+.email-lab {
+    margin-top: 31px;
+}
+
+/* Ending css forgot */
+
+
+
+
+/* start css new Create password */
+
+
+
+.new-password {
+    padding: 50px 50px;
+}
+
+.create-password {
+    padding-left: 35px;
+    padding-top: 130px;
+}
+
+.create-password h2 {
+    color: #1a0e25;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.create-password p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+a.reset-btnpaswrd {
+    background-color: #5f42a9;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    text-decoration: none;
+    padding: 10px 230px 10px 230px;
+
+}
+
+.reset-div.text-center {
+    padding-top: 60px;
+}
+
+.new-pass {
+    padding-top: 20px;
+}
+
+.confirm-pass {
+    padding-top: 20px;
+}
+
+/* ending new password css */
+
+
+
+/* Footer css */
+
+footer.foot-footer {
+    padding-left: 90px;
+}
+
+.footer {
+    background-color: rgba(95, 66, 169, 1);
+    color: white;
+    padding: 50px 0;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links li a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.footer-links li a:hover {
+    color: #aaaaff;
+}
+
+.footer-border {
+    border-right: 1px solid #7655c7;
+    padding: 10px 35px;
+    height: 210px;
+    padding-left: 60px;
+}
+
+.quicc {
+    padding-left: 60px;
+}
+
+.logo-textfooter {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-descriptionfooter {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    border: 1px solid #d4d4d8;
+    border-radius: 50%;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #a084e8;
+}
+
+
+/* ending css footer */
+
+
+
+
+
+
+/* Responsive css  */
+/* Mobile devices css */
+@media (min-width: 300px) and (max-width: 767px) {
+    header.bg-purple-custom {
+        padding: 0px;
+    }
+
+    .navbar-toggler-icon {
+        width: 23px;
+        height: 23px;
+
+    }
+
+    img.logo-hedd {
+        width: 100px;
+    }
+
+    .navbar-collapse {
+        padding-top: 20px;
+    }
+
+    .login-navv {
+        padding-left: 90px;
+    }
+
+    ul.navbar-nav {
+        gap: 3px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    a.bbtn-loginn {
+        padding: 4px 20px;
+        font-size: 13px;
+    }
+
+    a.bbtn-registerr {
+        padding: 4px 20px;
+        font-size: 13px;
+    }
+
+    /* How its work devices css  section home*/
+
+    .Howit-works {
+        padding: 30px 40px 95px 30px;
+    }
+
+    .hero {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .heading-parent {
+        font-size: 18px;
+    }
+
+    .sub-headingpara {
+        font-size: 12px;
+    }
+
+    img.frame-image {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .content-text.text-center {
+        margin-top: 100px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    .hero-btn {
+        padding: 7px 10px 7px 10px;
+        font-size: 12px;
+    }
+
+    .frame-heading {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+
+    /* feature compaign devices css  section home */
+
+    .cards-featured h2 {
+        font-size: 18px;
+    }
+
+    .cards-featured p {
+        font-size: 12px;
+
+    }
+
+    .featured-companions {
+        background-color: #f9f5ff;
+    }
+
+    section.featured-companions {
+        background: rgba(147, 121, 216, 0.11);
+        padding: 20px 20px;
+    }
+
+    h5.card-title {
+        font-size: 16px;
+    }
+
+    p.card-text {
+        font-size: 10px;
+    }
+
+    .text-center.button-viewdiv {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    .sign-viewbtn {
+        padding: 8px 10px 8px 10px;
+        font-size: 12px;
+    }
+
+
+    /* discover your best devices css  section home*/
+
+    .discover-yourbest h2 {
+        font-size: 18px;
+    }
+
+    .discover-yourbest p {
+        font-size: 12px;
+    }
+
+    .discover-yourbestcards {
+        padding: 0px;
+    }
+
+    h5.sec-text {
+        font-size: 14px;
+    }
+
+    .card-bodysec {
+        padding: 15px;
+    }
+
+    .sec-text {
+        font-size: 18px;
+        font-weight: 600;
+        color: #6b21a8;
+        margin: 0;
+    }
+
+    /* Gems card section devices css */
+
+    .heading-gems h5 {
+        font-size: 18px;
+    }
+
+    .heading-gems p {
+        font-size: 12px;
+    }
+
+    .rupeegems-txt h2 {
+        font-size: 24px;
+    }
+
+    .rupeegems-txt p {
+        font-size: 10px;
+    }
+
+
+    .gem-card {
+        padding: 15px;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .gem-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .description {
+        font-size: 11px;
+    }
+
+    .btn-purplegem {
+        padding: 8px;
+        font-size: 10px;
+        width: 100px;
+    }
+
+    /* Faq devices css  */
+
+    .faq-text h2 {
+        font-size: 18px;
+    }
+
+    .faq-text p {
+        font-size: 12px;
+    }
+
+    .boxes {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .faq-box h2 {
+        font-size: 14px;
+    }
+
+    .faq-box p {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+
+
+
+    /* login devices css  responsive */
+
+
+    .login-form {
+        padding: 24px 24px;
+    }
+
+    .Login-log {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .welcome-heading {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .login-para {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .login-btndiv {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    a.btnform-login {
+        cursor: pointer;
+        padding: 5px 100px;
+        font-size: 12px;
+    }
+
+    .log.text-center.mt-3 a {
+        color: #5f42a9;
+        font-size: 12px;
+    }
+
+    .log.text-center.mt-3 {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    /* Registration devices css  responsive */
+
+
+    section.register-section {
+        padding: 24px 24px;
+    }
+
+    .btnform-register {
+        font-size: 14px;
+        padding: 7px 70px;
+    }
+
+    .register-form {
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    .register-heading {
+        font-size: 30px;
+    }
+
+    .para-register {
+        font-size: 14px;
+    }
+
+    .form-text-small {
+        font-size: 9px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-check {
+        display: flex;
+        padding-left: 30px;
+        margin-bottom: 13px;
+    }
+
+
+    /* OTP verify responsive css */
+
+
+    .otp-container {
+        padding: 24px 24px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .otp-para {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .otp-heading {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    a.otp-btn {
+        padding: 10px 100px;
+    }
+
+    .otp-input {
+        text-align: center;
+        font-size: 24px;
+        padding: 5px;
+        width: 40px;
+        margin: 0px;
+    }
+
+    .resend p {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .text-center.otp-btn {
+        padding-top: 50px;
+    }
+
+
+
+
+
+    /* Forgot your password responsive css mobile */
+
+
+    .forgot-password {
+        padding: 24px 24px;
+    }
+
+    .forgott-rht {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .forgot-h {
+        font-size: 24px;
+    }
+
+    .para-forgot {
+        font-size: 10px;
+    }
+
+    .text-center.reset-link {
+        margin-top: 20px;
+    }
+
+    a.btn-sendlink {
+        font-size: 14px;
+        padding: 10px 85px;
+        margin-right: 0px;
+    }
+
+    /* New Create password devices css*/
+
+    .new-password {
+        padding: 24px 24px;
+    }
+
+    .create-password {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .create-password h2 {
+        font-size: 24px;
+    }
+
+    .create-password p {
+        font-size: 12px;
+    }
+
+    .new-pass {
+        padding-top: 0px;
+    }
+
+    .reset-div.text-center {
+        padding-top: 20px;
+    }
+
+    a.reset-btnpaswrd {
+        padding: 10px 85px;
+        font-size: 14px;
+    }
+
+
+    /* Signup page devices css  responsive */
+
+
+    section.signup {
+        padding: 24px 24px;
+    }
+
+    .signup-left {
+        padding: 0px;
+    }
+
+    .content-sighnup {
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+
+    .textright-sign h5 {
+        font-size: 16px;
+    }
+
+    .textright-sign h2 {
+        font-size: 18px;
+    }
+
+    .textright-sign p {
+        font-size: 10px;
+    }
+
+    .twoo-btns {
+        padding-top: 10px;
+    }
+
+    .title-iam {
+        font-size: 12px;
+    }
+
+    .description-assoite {
+        font-size: 7px;
+        text-align: justify;
+        font-weight: 500;
+    }
+
+    a.btnsign-continue {
+        padding: 7px 110px;
+    }
+
+
+    /* Assoiate profile devices css  responsive */
+
+
+    section.associateprofile {
+        padding: 24px 24px;
+    }
+
+    .assoiate-head h2 {
+        font-size: 18px;
+    }
+
+    .assoiate-head p {
+        font-size: 12px;
+    }
+
+    .assoiatee-right {
+        padding: 24px 24px;
+    }
+
+    .profile-assoiate p {
+        font-size: 10px;
+    }
+
+    .accordion-button.custom-toggle-icon {
+        font-size: 11px;
+    }
+
+    .btn-assoiateprofile {
+        padding: 10px 90px;
+    }
+
+    .modal-contentselect h2 {
+        font-size: 16px;
+    }
+
+    .modal-contentselect p {
+        font-size: 12px;
+    }
+
+    .modal-contentselect {
+        width: 90%;
+    }
+
+    .interest-buttons {
+        gap: 5px;
+    }
+
+
+
+    button#saveInterestBtn {
+        padding: 8px 10px;
+    }
+
+    button#clearallBtn {
+
+        padding: 8px 10px;
+    }
+
+    /* champion-profiledevices css  responsive */
+
+    .champion-head h2 {
+        font-size: 18px;
+    }
+
+    .champion-head p {
+        font-size: 12px;
+    }
+
+    .btn-championgirll {
+        padding: 7px 100px;
+    }
+
+    .customprofile-textarea {
+        font-size: 10px;
+    }
+
+    .upload-btn {
+        padding: 5px 40px;
+    }
+
+    .progress-step-bar {
+        width: 260px;
+    }
+
+    .form-input {
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+    /* second step devices css  */
+
+    .showmore-heading h2 {
+        font-size: 20px;
+    }
+
+    .showmore-heading p {
+        font: 10px;
+    }
+
+    .image-upload-one {
+        padding: 20px;
+    }
+
+    .secondchamp-step {
+        padding-top: 45px;
+    }
+
+
+    /* third step devices css  */
+
+    .text-chmpverify h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .text-chmpverify p {
+        font-size: 10px;
+    }
+
+    .verfy-champ {
+        padding: 30px 10px;
+    }
+
+    .format-idpara {
+        font-size: 8px;
+        padding: 5px
+    }
+
+    .preview-box p {
+        font-size: 12px;
+    }
+
+    .boxcap-container {
+        border-radius: 5px;
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .robot {
+        font-size: 10px;
+    }
+
+    .captcha-container {
+        margin-left: 70px;
+    }
+
+    .logo-captcha {
+        margin-left: 0%;
+    }
+
+    .captcha-text-tos {
+        margin-left: 0px;
+    }
+
+    .boxcap-container [type="checkbox"] {
+      
+        width: 25px;
+        height: 25px;
+        border: 2px solid #C1C1C1;
+        margin: 0px 14px 0px 14px;
+    }
+
+    /* model ready  devices css */
+    .modal-content {
+        padding: 30px 10px;
+        max-width: 325px;
+    }
+
+    .modal-content p {
+        font-size: 10px;
+    }
+
+/* Hide default checkbox */
+.captcha-checkbox input[type="checkbox"] {
+    display: none;
+} */
+
+
+
+
+    /* footer devices css  */
+
+    footer.foot-footer {
+        padding: 0;
+    }
+
+    .social-icons {
+        margin-left: -36px;
+    }
+
+    .logo-descriptionfooter {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 11px;
+    }
+
+    .logo-textfooter img {
+        width: 50%;
+        padding-bottom: 11px;
+    }
+
+    .footer-border {
+        border-right: 1px solid #7655c7;
+        height: 140px;
+    }
+
+    .quicc {
+        margin-top: 50px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    img.logo-hedd {
+        width: 100%;
+        height: 100%;
+    }
+
+    a.nav-link {
+        font-size: 11px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+
+    .login-navv {
+        display: contents;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center !important;
+        gap: 10px;
+
+    }
+
+    ul.navbar-nav {
+        gap: 0px;
+        padding-left: 10px;
+    }
+
+
+
+
+
+    .bbtn-loginn {
+        /* width: 100px; */
+        color: #ffffff;
+        font-family: "Crimson Pro", serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .bbtn-registerr {
+        width: 100px;
+        padding: 10px 15px;
+        font-family: "Crimson Pro", serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+
+
+    header.bg-purple-custom {
+        padding: 10px 0;
+    }
+
+    /* How its work tablet css */
+
+    .frame-heading {
+        font-family: Crimson Pro;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    img.frame-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* featiure compaign tablet css */
+
+
+    .cards-featured h2 {
+        font-family: Crimson Pro;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .cards-featured p {
+        font-family: Crimson Pro;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+
+
+    /* Discover yourbest tablet css */
+    .discover-yourbest h2 {
+        font-family: Crimson Pro;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .discover-yourbest p {
+        font-family: Crimson Pro;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+
+
+    /* Express Interests with Gems tablet css */
+
+    .heading-gems h5 {
+        font-family: Crimson Pro;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .heading-gems p {
+        font-family: Crimson Pro;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+
+    /* Frequently question tablet  */
+
+    .faq-text h2 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .faq-text p {
+        font-family: Crimson Pro;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .faq-box h2 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 34px;
+    }
+
+
+    /* Login tablet css */
+
+    .login-form {
+        padding: 50px 50px;
+    }
+
+    .login-log {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-heading {
+        font-size: 40px;
+    }
+
+    .Login-log {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .login-para {
+        font-size: 16px;
+    }
+
+    .login-btndiv {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    a.btnform-login {
+        padding: 10px 290px;
+        font-size: 18px;
+    }
+
+    .form-label {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 20px;
+    }
+
+    .form-check-label {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .Remember-me {
+        font-size: 18px;
+    }
+
+    .forgot-link .forgot-pass {
+        font-size: 18px;
+    }
+
+    .log.text-center.mt-3 {
+        font-size: 18px;
+    }
+
+    .log.text-center.mt-3 a {
+        color: #5f42a9;
+        font-size: 18px;
+    }
+
+
+    /* Registration tablet css  */
+
+    section.register-section {
+        padding: 50px 50px;
+    }
+
+    .register-form {
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+
+    .register-heading {
+        font-size: 40px;
+    }
+
+    .para-register {
+        font-size: 16px;
+    }
+
+    .form-text-small {
+        font-size: 14px;
+    }
+
+    .form-check-label {
+        font-size: 18px;
+    }
+
+    .btnform-register {
+        padding: 10px 260px;
+        font-size: 18px;
+    }
+
+    .registraionform-btndiv.text-center {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .login-link {
+        font-size: 18px;
+    }
+
+
+    /* OTP verify tablet css */
+
+
+    .verify-image.mb-4.mb-md-0 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .otp-container {
+        padding: 40px;
+        margin: 0px;
+    }
+
+    .otp-heading {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 35px;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+    .otp-box {
+        justify-content: flex-start;
+    }
+    .otp-text {
+        padding-left: 50px;
+    }
+    .resend {
+        margin-top: 20px;
+        text-align: center;
+        white-space: nowrap;
+        padding-left: 35px;
+    }
+    .text-center.otp-btn {
+        padding-top: 40px;
+    }
+    a.otp-btn {
+        padding: 10px 186px;
+    }
+    .otp-para {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Forgot your password responsive css tablet */
+
+    .forgot-password {
+        padding: 50px 50px;
+    }
+
+    .forgot {
+        width: 100%;
+        height: 100%;
+    }
+
+    .forgott-rht {
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .forgot-h {
+        font-size: 35px;
+    }
+
+    .para-forgot {
+        font-size: 18px;
+    }
+
+    .text-center.reset-link {
+        margin-top: 30px;
+    }
+
+    a.btn-sendlink {
+        font-size: 16px;
+        padding: 10px 245px;
+        margin-right: 0px;
+    }
+
+    /* New paassword tablet css */
+
+
+    .create-password {
+        padding-left: 10px;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .create-password h2 {
+        font-size: 35px;
+    }
+
+    .create-password p {
+        font-size: 18px;
+    }
+
+    .form-label {
+        font-size: 22px;
+    }
+
+    .form-control {
+        font-size: 18px !important;
+    }
+
+    .reset-div.text-center {
+        padding-top: 30px;
+    }
+
+    a.reset-btnpaswrd {
+        padding: 10px 250px;
+    }
+
+    /* Signup page tablet css responsive */
+
+    section.signup {
+        padding: 50px 50px;
+    }
+
+    .signup-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-signup {
+        width: 100%;
+
+    }
+
+    .content-sighnup {
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+
+    .textright-sign h5 {
+        font-size: 25px;
+    }
+
+    .textright-sign h2 {
+        font-size: 35px;
+    }
+
+    .textright-sign p {
+        font-size: 18px;
+    }
+
+    .title-iam {
+        font-size: 22px;
+    }
+
+    .twoo-btns {
+        padding-top: 15px;
+    }
+
+    .description-assoite {
+        font-size: 16px;
+    }
+
+    a.btnsign-continue {
+        padding: 10px 280px;
+        font-size: 18px;
+    }
+
+
+
+    /* Assoiate profile tablet responsive */
+
+    section.associateprofile {
+        padding: 50px 50px;
+        background: #ffffff;
+    }
+
+    .assoiate-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .assoiatee-right {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 45px;
+    }
+
+    .assoiate-head h2 {
+        font-size: 35px;
+    }
+
+    .assoiate-head p {
+        font-size: 18px;
+    }
+
+    .profile-assoiate p {
+        font-size: 16px;
+    }
+
+    .btn-assoiateprofile {
+        padding: 10px 265px;
+        font-size: 18px;
+    }
+
+    .accordion-button.custom-toggle-icon {
+        font-size: 16px;
+    }
+
+
+    /* companion tablet css */
+
+    .championn-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .champion-head h2 {
+        font-size: 35px;
+    }
+
+    .champion-head p {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 16px;
+    }
+
+    .btn-championgirll {
+        font-size: 18px;
+        padding: 10px 250px;
+    }
+
+    .progress-step-bar {
+        width: 645px;
+    }
+
+    .upload-btn {
+        font-size: 16px;
+    }
+
+    /* second step tablet */
+
+    .showmore-heading h2 {
+
+        font-size: 35px;
+    }
+
+    .showmore-heading p {
+        font-size: 17px;
+    }
+
+    .image-upload-one {
+        padding: 10px 70px;
+    }
+
+    .secondchamp-step {
+        padding-top: 70px;
+    }
+
+    /* thirdstep tablet */
+
+    .text-chmpverify h2 {
+        font-size: 35px;
+    }
+
+    .text-chmpverify p {
+        font-size: 17px;
+    }
+
+    .preview-box p {
+        font-size: 17px;
+    }
+
+    .format-idpara {
+        font-size: 16px;
+    }
+
+    /* popup model tabler */
+
+    .modal-content h2 {
+        font-size: 30px;
+    }
+
+    .modal-content p {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        max-width: 645px;
+        height: 395px;
+    }
+
+    .modal-close {
+        top: 0px;
+        right: 20px;
+        font-size: 55px;
+    }
+
+
+
+    /* Footer tablet responsive */
+
+    footer.foot-footer {
+        padding-left: 0px;
+    }
+
+    .logo-descriptionfooter {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 1);
+        text-align: justify;
+        padding-top: 11px;
+    }
+
+    .footer-border {
+        border-right: 1px solid #7655c7;
+        padding-left: 10px;
+    }
+
+    .quicc {
+        padding-left: 0 !important;
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 0px;
+        margin: 0px;
+        border-radius: 50%;
+        padding: 0px;
+    }
+
+    .social-icons {
+        margin-left: 0px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+}

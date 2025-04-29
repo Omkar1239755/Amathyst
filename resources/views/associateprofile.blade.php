@@ -2,11 +2,7 @@
 @extends('layouts.layout')
 @section('content')
 
-
 <body>
-
-
-
 
 	<section class="associateprofile">
 		<div class="container">
@@ -20,7 +16,7 @@
 							suggest people who align with your interests and experiences. </p>
 					</div>
 					<div class="text-center profile-assoiate"> <img id="profilePreview"
-							src="{{asset('assests/images/profileimgasssoi.svg')}}" alt="Profile Preview"
+							src="{{asset('assests/images/profileimgasssoi.svg')  }}" alt="Profile Preview"
 							style="width: 120px; height: 120px; border-radius: 50%;" />
 						<p> Upload a Profile Picture <br />This helps companions see who’s interested in them. </p>
 						<input type="file" id="profileUpload" accept="image/*" style="display: none;" /> <button
@@ -48,6 +44,9 @@
 						</div>
 
 
+
+
+
 						<!-- Modal for Accordion Item 1 -->
 						<div id="interestModal1" class="modal-overlay">
 							<div class="modal-contentselect">
@@ -55,20 +54,15 @@
 								<h2>What Are You Interested In?</h2>
 								<p>Select a few topics you genuinely enjoy. This helps us match you with better
 									connections.</p>
+								<div class="interest-buttons">
 
-         <!-- this data is coming from admin -->
-							<div class="interest-buttons">
+								@foreach($data as $hobbie)
+									<button class="interest-btn" ><img
+											src="uploads/hobbies/{{ $hobbie->image }}" alt="" class="modelunic-icon">
+									{{ $hobbie->hobbie }}</button>
+								@endforeach
 
-                    @foreach ($data as $index => $hobby)
-                          <button class="interest-btn" data-interest="🎵 Music"></i>
-                          <img src="/uploads/hobbies/{{ $hobby->image }}" width="20" alt="{{ $hobby->hobbie }}"> {{ $hobby->hobbie }}
-                          </button>
-
-                    @endforeach
-							
-							</div>
-
-
+								</div>
 								<div class="d-flex justify-content-center confirmm-modelbtn">
 									<button class="clearall-btn" id="clearallBtn1">Clear All</button>
 									<button class="confirmm-selectbtn" id="saveInterestBtn1">Confirm Selection</button>
@@ -160,12 +154,6 @@
 						</div> 
 
 
-
-
-
-
-
-
 						<!-- Accordion Item 4 -->
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingFour">
@@ -209,14 +197,9 @@
 					</div>
 				</div>
 			</div>
-	</section> <!-- Footer -->
-
-
-
-
+	</section> 
+	
 </body> <!-- Bootstrap JS Bundle (includes Popper) -->
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- select model -->
@@ -301,6 +284,14 @@
 		});
 	});
 </script>
+
+
+
+
+
+
+
+
 <!-- continue -->
 <script>
 	const modal = document.getElementById("completionModal");
