@@ -1,0 +1,45 @@
+@extends('admin::admin.layouts.layout')
+@section('content')
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-12">
+                	<div class="card">
+					   <div class="card-body">
+					       
+	   				 	<form method="POST" action="{{route('faq.update',$faq->id)}}">
+	   				 	    @csrf
+	   				 	    	<div class="row">
+								  <div class="col-md-6 mb-3">
+								    <label for="title" class="form-label">Title</label>
+								    <input type="text" class="form-control" value="{{ old('title', $faq->title) }}" placeholder="Enter Title " name="title">
+								    @if($errors->has('title'))
+                                        <span class="text-danger">{{ $errors->first('title') }}</span>
+                                    @endif
+								  </div>
+								  <div class="col-md-12 mb-3 ">
+									  <label for="comment">Description</label>
+									  <textarea class="form-control" rows="5"  name="description">{{old('description',$faq->description)}}</textarea>
+									@if($errors->has('description'))
+                                        <span class="text-danger">{{ $errors->first('description') }}</span>
+                                    @endif
+								  </div>
+								  <div class="col-md-6">
+								    <button type="submit" class="btn btn-primary">Submit</button>
+								  </div>
+							</div>
+		   				 	
+						 </form>
+					   	</div>
+					   </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+</div>
+@endsection	

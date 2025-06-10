@@ -105,7 +105,7 @@ header.bg-purple-custom {
 
 /* main Hero section */
 .hero {
-    background-image: url("/assests/images/banner.jpeg");
+    background-image: url("images/banner.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

@@ -1,100 +1,93 @@
 <?php
-
 namespace Modules\Admin\Http\Controllers;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use  App\Models\Activity;
+use App\Models\Activity;
 
 class ActivityController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        return view('admin::index');
+    
+    public function index() {
+     $activities = Activity::all();
+     return view('admin::activity.index',compact('activities'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
+    
+    
     public function create()
     {
-        return view('admin::create');
+        return view('admin::activity.create');
     }
+    
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request) {}
-
-    /**
-     * Show the specified resource.
-     */
-    public function show($id)
+    public function store(Request $request)
     {
-        return view('admin::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        return view('admin::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, $id) {}
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($id) {}
-
-
-    public function activityView(){
-
-        $data = Activity::all();
-    
-    return view('admin::admin.Activity',compact('data'));
-    
-    }
-    
-    
-    public function activityViewStore(Request $request)
-    {
-     
+        
         $validatedData = $request->validate([
-            'activity_name' => 'required'
-            
+            'activity' => 'required|string|min:5',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-    
-    
-    
-        // Check if the request has a file and process the image
-        if ($request->hasFile('activity_image')) {
-            $image = $request->file('activity_image');
+        
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move(public_path('uploads/activity'), $imageName);
         }
     
-    
-        // Save data to database
         Activity::create([
-            'activity' => $validatedData['activity_name'],
+            'activity' => $validatedData['activity'],
             'image' => $imageName ?? null,
         ]);
     
-        // Return a success response
-        return response()->json([
-            'success' => true,
-            'message' => 'activity added successfully!',
-        ]);
+        return redirect()->route('activtiy.index')->with('success','Activity Created Successfully');
     }
     
+    
+    public function delete($id)
+    {
+        $activity=Activity::find($id);
+        if ($activity && $activity->image) {
+         $imagePath = public_path('uploads/hobbies/' . $activity->image);
+         if (file_exists($imagePath)) {
+                unlink($imagePath); 
+            }
+        }
+       Activity::find($id)->delete();
+       return redirect()->route('activtiy.index')->with('success','Activity Deleted Successfully');
+    }
+    
+    public function edit(Request $request)
+    {
+        $activity= Activity::findOrFail($request->id);
+        return view('admin::activity.edit',compact('activity'));
+    }
+    
+    public function update(Request $request,$id)
+    {
+        $validatedData = $request->validate([
+           'activity' => 'required|string|min:5',
+        ]);
+       
+        $activity = Activity::findOrFail($request->id);
+        if($activity->image){
+            $oldImagePath = public_path('uploads/activity/' . $activity->image);
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
+            }
+        }
+        
+      
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('uploads/activity'), $imageName);
+        }
+        
+       $activity ->update([
+            'activity' => $validatedData['activity'],
+            'image' => $imageName ?? $activity->image,
+        ]);
+    
+        return redirect()->route('activtiy.index')->with('success','Activity Updated Successfully');
+    }
     
 }

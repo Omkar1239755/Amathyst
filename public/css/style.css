@@ -1,20 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+body{
+   font-family: 'Poppins';
+}
+main{
+min-height: calc(100vh - 270px);
+}
+button.remove-personality {
+    border: none;
+    background: none;
+}
+
+a.nav-link:hover {
+    color: #FFF;
+}
+img.rounded-circle {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+a.dropdown-item:hover {
+    background: none;
+    color: #000;
+}
+
+
+.welcom-txt {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFF;
+}
+.sub-hedwelcom {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    color: #FFF;
+}
+.dropdown-toggle::after {
+    color: #FFF;
+}
+a.nav-link {
+    color: rgba(255, 255, 255, 0.68);
+     font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
 
 
 a.nav-link:hover {
     color: #FFFF;
-}
-
-.login-navv {
-    /* margin: auto; */
-    padding-left: 470px;
-}
-
-a.bbtn-loginn {
-    margin-right: 10px;
 }
 
 ul.navbar-nav {
@@ -22,10 +65,14 @@ ul.navbar-nav {
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-family: Crimson;
+   font-family: 'Poppins';
     font-weight: 400;
     font-size: 18px;
     padding-left: 26px;
+
+}
+div#collapsibleNavbar {
+    justify-content: space-between;
 }
 
 a.nav-link {
@@ -36,7 +83,7 @@ a.nav-link {
     background-color: #8b5cf6;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 99;
 }
 
 .btn-purple {
@@ -67,20 +114,16 @@ header.bg-purple-custom {
     border: none;
     background-color: #9379d9;
     color: #ffffff;
-    font-family: "Crimson Pro", serif;
-    font-weight: 700;
+    font-family: 'Poppins';
+    font-weight: 600;
     font-size: 17px;
     text-align: center;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
+     margin-right: 10px;
 }
 
-.bbtn-loginn:hover {
-    background-color: #7e67cb;
-    color: #ffffff;
-    text-decoration: none;
-}
 
 .bbtn-registerr {
     border-radius: 49px;
@@ -88,8 +131,8 @@ header.bg-purple-custom {
     border: none;
     background-color: #ffffff;
     color: #a084e8;
-    font-family: "Crimson Pro", serif;
-    font-weight: 700;
+    font-family: 'Poppins';
+    font-weight: 600;
     font-size: 17px;
     text-align: center;
     display: inline-block;
@@ -97,15 +140,35 @@ header.bg-purple-custom {
     text-decoration: none;
 }
 
-.bbtn-registerr:hover {
-    background-color: #f3edff;
-    color: #7b5fcc;
-    text-decoration: none;
+
+.orloginbtn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
+.orloginbtn a {
+    border: none;
+    background: #5f42a9;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
 
 /* main Hero section */
 .hero {
-    background-image: url("/assests/images/banner.jpeg");
+    background-image: url("../assests/images/banner.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -133,18 +196,16 @@ header.bg-purple-custom {
 }
 
 .heading-parent {
-    font-family: Crimson Pro;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 50px;
-    line-height: 92%;
-    letter-spacing: 0%;
     text-align: center;
     color: #ffffff;
 }
 
 .sub-headingpara {
-    font-family: Crimson Pro;
-    font-weight: 300;
+    font-family: 'Poppins';
+    font-weight: 400;
     font-size: 20px;
     line-height: 124%;
     letter-spacing: 2%;
@@ -153,18 +214,18 @@ header.bg-purple-custom {
 }
 
 .hero-btn {
-    width: 243;
-    height: 62;
+    font-size:18;
+    font-weight:700;
     gap: 10px;
     border-radius: 78px;
     padding: 10px 20px 10px 20px;
     border: none;
     background-color: #a084e8;
     color: #ffffff;
+     font-family: 'Poppins';
 }
 
 /* section first css */
-
 .Howit-works {
     padding: 40px 40px;
 }
@@ -177,7 +238,7 @@ img.frame-image {
 }
 
 .frame-heading {
-    font-family: Crimson Pro;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
@@ -187,16 +248,14 @@ img.frame-image {
     padding-bottom: 30px;
 }
 
-
 /* card second sec  css */
-
 section.featured-companions {
     background: rgba(147, 121, 216, 0.11);
     padding: 60px 60px;
 }
 
 .cards-featured h2 {
-    font-family: Crimson Pro;
+ font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
@@ -207,22 +266,16 @@ section.featured-companions {
 }
 
 .cards-featured p {
-    font-family: Crimson Pro;
+    font-family: 'Poppins';
     font-weight: 300;
     font-size: 16px;
     line-height: 124%;
     letter-spacing: 2%;
     text-align: center;
-
 }
 
-
-
-
-
-
 .discover-yourbest h2 {
-    font-family: Crimson Pro;
+    font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
@@ -233,7 +286,7 @@ section.featured-companions {
 }
 
 .discover-yourbest p {
-    font-family: Crimson Pro;
+  font-family: 'Poppins';
     font-weight: 300;
     font-size: 16px;
     line-height: 124%;
@@ -242,7 +295,11 @@ section.featured-companions {
     color: rgba(26, 22, 25, 1);
 }
 
-
+img.littlebit-card {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .cards.text-center {
     padding-top: 70px;
 }
@@ -255,7 +312,7 @@ section.featured-companions {
 }
 
 h5.card-title {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -265,7 +322,7 @@ h5.card-title {
 }
 
 p.card-text {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
@@ -284,24 +341,16 @@ p.card-text {
     gap: 10px;
     border-radius: 78px;
     padding: 10px 20px 10px 20px;
-    border: 1px solid #a084e8;
-    font-family: Poppins;
+    border: 1px solid #8b5cf6;
+     font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 2%;
-    color: #a084e8;
-    background: #f3f0fb;
-}
-.sign-viewbtn:hover {
-    background-color: #8b5cf6;
     color: #FFF;
-    cursor: pointer;
-   
+    background: #8b5cf6;
+    
 }
-
-
-
 
 
 .text-center.button-viewdiv {
@@ -310,7 +359,6 @@ p.card-text {
 }
 
 /* card second css */
-
 section.discoverbest-companion {
     padding: 50px 50px;
 }
@@ -337,7 +385,7 @@ section.discoverbest-companion {
 }
 
 h5.sec-text {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -353,12 +401,12 @@ section.interestwith-gems {
     padding: 40px 40px;
 }
 
-.gemscard {
-    justify-content: center;
-    padding: 30px 40px;
-    margin: auto;
-    gap: 20px;
-}
+/*.gemscard {*/
+/*    justify-content: center;*/
+/*    padding: 30px 40px;*/
+/*    margin: auto;*/
+/*    gap: 20px;*/
+/*}*/
 
 .interestwith-gems-card img {
     width: 100%;
@@ -366,30 +414,41 @@ section.interestwith-gems {
 }
 
 .heading-gems h5 {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: 5%;
     text-align: center;
     text-transform: uppercase;
+    color: rgb(26 22 25);
+
 }
 
 .heading-gems p {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 300;
     font-size: 16px;
     line-height: 124%;
-    letter-spacing: 2%;
     text-align: center;
+    padding-bottom:13px;
 }
+a.bestcompaign-card {
+    text-decoration: none;
+    color: rgba(26, 22, 25, 1);
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+}
+
+
+
+
 
 /* gems card css */
-
-.gemscard {
-    gap: 1.5rem;
-    padding: 2rem;
-}
 
 .gem-card {
     background-color: rgba(96, 69, 164, 1);
@@ -400,10 +459,8 @@ section.interestwith-gems {
     min-height: 260px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     display: flex;
-
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .gem-img {
@@ -415,7 +472,7 @@ section.interestwith-gems {
 }
 
 .description {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 300;
     font-size: 16px;
 }
@@ -429,22 +486,19 @@ section.interestwith-gems {
     padding: 10px 10px 10px 10px;
     gap: 10px;
     border-radius: 78px;
-
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
-
 }
 
 .btn-purplegem:hover {
     background-color: rgba(160, 132, 232, 1);
     color: #FFF;
-
 }
 
 .rupeegems-txt h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 25px;
     line-height: 100%;
@@ -454,7 +508,7 @@ section.interestwith-gems {
 }
 
 .rupeegems-txt p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
@@ -462,40 +516,14 @@ section.interestwith-gems {
     text-transform: capitalize;
 }
 
-
-
-
-
-
-
-
-
-
 /* end css gems card */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* section five */
 section.frequasked-questions {
     padding: 40px 40px;
 }
 
 .faq-text h2 {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
@@ -506,16 +534,15 @@ section.frequasked-questions {
 }
 
 .faq-text p {
-    font-family: Crimson Pro;
+   font-family: 'Poppins';
     font-weight: 300;
     font-size: 16px;
     align-items: center;
     text-align: center;
-
 }
 
 .faq-box p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 300;
     font-size: 18px;
     line-height: 167%;
@@ -524,14 +551,14 @@ section.frequasked-questions {
 }
 
 .faq-box h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 25px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
     padding-bottom: 10px;
-
+    padding-top: 10px;
 }
 
 .frequasked-parentdiv {
@@ -540,9 +567,137 @@ section.frequasked-questions {
     padding-top: 70px;
 }
 
-.swiper-slide.swiper-slide-active {
-    padding: 15px 25px 15px 25px;
+/*swipper slider*/
+
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #5f42a9;
 }
+.swiper-slide.swiper-slide img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-grid.swiper-watch-progress.swiper-backface-hidden.swiper-thumbs
+  img {
+  width: 100%;
+  object-fit: cover;
+  height: 110px;
+}
+
+.mySwiper2 {
+  /*height: 70% !important;*/
+  width: 100%;
+  border-radius: 16px;
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: -34px;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+
+.swiper-dashboard .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  height: auto;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  border-radius: 8px;
+  /*opacity: 0.7;*/
+  transition: 0.3s;
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height:150px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top:0px;
+}
+
+.swiper {
+  width: 100%;
+}
+div#index-slider {
+    width: 100%;
+    height: 245px;
+}
+
+
+/*swipper slider*/
+
+
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow: clip;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    height: 300px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+
+
 
 .boxes {
     width: 70%;
@@ -565,22 +720,22 @@ section.frequasked-questions {
 }
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    position: relative;
+    /*position: relative;*/
 }
 
 
+div#swiper-wrapper-67a38a6a65d3cf87 {
+    height: 400px !important;
+    /* width: 100px; */
+}
 
-
-
-
-
+/*swipper slider index ending*/
 
 
 
 
 
 /* Register css */
-
 section.register-section {
     padding: 50px 50px;
 }
@@ -592,23 +747,21 @@ section.register-section {
 }
 
 .register-left {
-    background-color: #f8f5ff;
-    padding: 50px;
+    /*background-color: #f8f5ff;*/
+    /*padding: 50px;*/
     text-align: center;
 }
 
 .register-left img {
-    max-width: 100%;
-    height: auto;
+   width:100%;
 }
 
 .register-form {
-    padding-left: 60px;
+    padding-left: 30px;
 }
 
-
 .form-label {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
@@ -634,11 +787,11 @@ section.register-section {
     text-decoration: none;
 }
 
-.btnform-register {
+a.btnform-register {
     background-color: #5f42a9;
     top: 1013px;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 160%;
@@ -649,12 +802,11 @@ section.register-section {
     border: none;
     padding: 8px;
     text-decoration: none;
-    padding: 10px 273px;
+    padding: 10px 200px;
 }
 
 .form-text-small {
-
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 300;
     font-size: 12px;
     line-height: 100%;
@@ -679,7 +831,7 @@ section.register-section {
 }
 
 .register-heading {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 35px;
     line-height: 126%;
@@ -689,7 +841,7 @@ section.register-section {
 }
 
 .para-register {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -697,7 +849,7 @@ section.register-section {
     vertical-align: middle;
 }
 
-.form-check{
+.form-check {
     font-size: 20px;
     /* margin: 4px; */
 }
@@ -705,7 +857,6 @@ section.register-section {
 .form-check-input:checked {
     background-color: #5f42a9;
     border-color: #5f42a9;
-   
 }
 
 .d-flex.birthday input {
@@ -713,28 +864,24 @@ section.register-section {
 }
 
 /* Ending css Register */
-
-
 /* OTP send css */
-
 .verify-image img {
-    max-width: 100%;
-    height: auto;
+    max-width: 65%;
+    /* height: 100%; */
+    margin-top: 50px;
 }
-
-
 
 .otp-container {
-    margin:0px;
-    padding: 50px;
+    margin: 0px;
+    /*padding: 50px;*/
+    padding: 20px 20px;
 }
-
 
 .otp-input {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     padding: 10px;
-    width: 50px;
+    width: 45px;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -750,11 +897,11 @@ section.register-section {
     padding-top: 70px;
 }
 
-a.otp-btn {
+button.otp-btn {
     background: #5f42a9;
     border: none;
     color: #fff;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 14px;
     line-height: 160%;
@@ -776,14 +923,13 @@ a.otp-btn {
 }
 
 .resend p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .otp-box {
@@ -792,9 +938,8 @@ a.otp-btn {
     gap: 10px;
 }
 
-
 .otp-heading {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 25px;
     line-height: 126%;
@@ -805,7 +950,7 @@ a.otp-btn {
 }
 
 .otp-para {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -815,7 +960,6 @@ a.otp-btn {
     white-space: nowrap;
     color: #1a0e25;
     padding: 6px;
-
 }
 
 /* Ending css otp */
@@ -823,7 +967,82 @@ a.otp-btn {
 
 
 
+
+
 /* Signup page css */
+
+
+.twoo-btns-box {
+    width: 100%;
+    height: 265px;
+    margin: 50px auto;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.btn-box {
+  text-decoration: none;
+  color: #000;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-box:hover {
+    background-color: #f8f5ff;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 5px;
+  gap: 15px;
+  position: relative;
+}
+
+.btn-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.btn-titlesign {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.btn-arrowsignin {
+  font-size: 17px;
+  color: #555;
+  margin-left: auto; /* Pushes arrow to the right */
+}
+
+.btn-divider {
+  height: 2px;
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section.signup {
     padding: 50px 50px;
@@ -846,7 +1065,7 @@ section.signup {
 }
 
 .textright-sign h5 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 500;
     font-size: 22px;
     line-height: 123%;
@@ -855,7 +1074,7 @@ section.signup {
 }
 
 .textright-sign h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 35px;
     line-height: 123%;
@@ -864,7 +1083,7 @@ section.signup {
 }
 
 .textright-sign p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -872,20 +1091,19 @@ section.signup {
     vertical-align: middle;
 }
 
-
 .assoite-link {
     text-decoration: none;
     color: inherit;
     display: block;
-    border: 1px solid #cac8cc;
+    /*border: 1px solid #cac8cc;*/
     padding: 10px;
     border-radius: 12px;
 }
 
-.assoite-link:hover {
-    background-color: rgb(95 66 169);
-    color: #ffffff;
-}
+/*.assoite-link:hover {*/
+/*    background-color: rgb(95 66 169);*/
+/*    color: #ffffff;*/
+/*}*/
 
 .btn-assoiate {
     display: flex;
@@ -902,16 +1120,16 @@ section.signup {
     text-decoration: none;
     color: inherit;
     display: block;
-    border: 1px solid #cac8cc;
+    /*border: 1px solid #cac8cc;*/
     padding: 10px;
     border-radius: 12px;
     margin-top: 25px;
 }
 
-.champion-link:hover {
-    background-color: rgb(95 66 169);
-    color: #ffffff;
-}
+/*.champion-link:hover {*/
+/*    background-color: rgb(95 66 169);*/
+/*    color: #ffffff;*/
+/*}*/
 
 .assoiate-content {
     display: flex;
@@ -927,7 +1145,7 @@ section.signup {
 
 .title-iam {
     margin: 0;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
     line-height: 160%;
@@ -937,7 +1155,7 @@ section.signup {
 
 .description-assoite {
     margin: 4px 0 0 0;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 13px;
     line-height: 160%;
@@ -953,8 +1171,6 @@ section.signup {
 .twoo-btns {
     padding-top: 50px;
 }
-
-
 
 .btn-champion {
     margin-top: 35px;
@@ -978,7 +1194,7 @@ section.signup {
 
 .descri-champion {
     margin: 4px 0 0 0;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 12px;
     line-height: 160%;
@@ -989,7 +1205,7 @@ section.signup {
 
 .title-champion {
     margin: 0;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 160%;
@@ -1004,7 +1220,7 @@ a.btnsign-continue {
     padding: 10px 261px;
     border-radius: 12px;
     text-decoration: none;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 14px;
     line-height: 160%;
@@ -1018,10 +1234,12 @@ a.btnsign-continue {
 }
 
 /* Ending css signup */
-
-
-
 /*Start css associateprofile  */
+
+
+.reviews-start {
+    margin: auto;
+}
 
 span.tag {
     padding: 15px;
@@ -1035,11 +1253,13 @@ section.associateprofile {
     padding: 50px 50px;
     background: #ffffff;
 }
-
-
+/*scrooler in compainion*/
 .assoiatee-right {
     padding-left: 60px;
     padding-top: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 900px;
 }
 
 .profile-assoiate {
@@ -1049,17 +1269,16 @@ section.associateprofile {
 }
 
 .assoiate-head h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.5px;
     vertical-align: middle;
-
 }
 
 .assoiate-head p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1070,14 +1289,13 @@ section.associateprofile {
 
 .profile-assoiate p {
     padding-top: 15px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .upload-btn {
@@ -1087,8 +1305,7 @@ section.associateprofile {
     padding: 5px 50px;
     border: 1px solid rgba(95, 66, 169, 1);
     background: #ffffff;
-
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1098,16 +1315,15 @@ section.associateprofile {
     color: rgba(95, 66, 169, 1);
 }
 
-
 .assoit-btnn {
     padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .btn-assoiateprofile {
-
     background-color: #5f42a9;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 14px;
     line-height: 160%;
@@ -1117,12 +1333,18 @@ section.associateprofile {
     cursor: pointer;
     border: none;
     padding: 8px;
-
     text-decoration: none;
     padding: 10px 255px;
 }
 
 /* model assoiate */
+.d-flex.align-items-center.button-imgs {
+    border: 1px solid #dad7e3;
+    border-radius: 20px;
+    gap: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
 
 img.modelunic-icon {
     width: 19px;
@@ -1133,15 +1355,14 @@ img.modelunic-icon {
     color: #fff;
 }
 
-
-button.clearall-btn{
+button.clearall-btn {
     padding: 10px 70px;
     margin: 10px;
     background: #FFF;
     border: 1px solid #5f42a9;
     color: #5f42a9;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 14px;
 }
@@ -1153,15 +1374,12 @@ button.confirmm-selectbtn {
     margin: 10px;
     background-color: #5f42a9;
     color: #ffffff;
-
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 12px;
     line-height: 160%;
     letter-spacing: 0px;
     vertical-align: middle;
-
-
 }
 
 .modal-contentselect {
@@ -1176,28 +1394,24 @@ button.confirmm-selectbtn {
     cursor: pointer;
 }
 
-
 .modal-contentselect h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-
 }
 
 .modal-contentselect p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 160%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-
 }
-
 
 /* Remove default arrow */
 .accordion-button::after {
@@ -1210,6 +1424,16 @@ button.confirmm-selectbtn {
     border-radius: 8px;
     margin-bottom: 12px;
     overflow: hidden;
+    
+}
+
+button.delete-btn.ms-2.remove-trait {
+    border: none;
+    background: none;
+}
+button.remove-activity {
+    border: none;
+    background: none;
 }
 
 /* Accordion button styling */
@@ -1218,13 +1442,15 @@ button.confirmm-selectbtn {
     color: #1a0e25;
     border: none;
     box-shadow: none;
-    padding: 8px 16px;
+    padding: 16px 16px;
     font-weight: 500;
     border-radius: 8px;
     position: relative;
     transition: background-color 0.3s ease;
-
+   
 }
+
+
 
 /* Plus (+) and minus (–) icon */
 .accordion-button.custom-toggle-icon::before {
@@ -1243,8 +1469,8 @@ button.confirmm-selectbtn {
 
 /* Body padding and style */
 .accordion-body {
-    padding: 0;
-    background-color: #f9f9f9;
+    padding:5px;
+    /*background-color: #f9f9f9;*/
     font-size: 15px;
     color: #1a0e25;
 }
@@ -1283,8 +1509,6 @@ button.confirmm-selectbtn {
     border-radius: 20px;
     cursor: pointer;
     font-size: 12px;
-
-
 }
 
 .interest-btn.selected {
@@ -1312,19 +1536,11 @@ ul.hobbies-model li:hover {
     cursor: pointer;
 }
 
-
-
-
-
 /*Ending css associateprofile  */
-
-
 /* Championgirl-profile css start */
-
-
-.col-md-6.championn-left {
-    background: #f8f5ff;
-}
+/*.col-md-6.championn-left {*/
+/*    background: #f8f5ff;*/
+/*}*/
 
 img.image-companion {
     width: 100%;
@@ -1347,7 +1563,7 @@ section.companion-contained {
 }
 
 .champion-head h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
@@ -1357,7 +1573,7 @@ section.companion-contained {
 }
 
 .champion-head p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1366,19 +1582,15 @@ section.companion-contained {
     color: #1a0e25;
 }
 
-
-
-
 .profile-championgirl p {
     padding-top: 15px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .uploadchamp-btn {
@@ -1388,8 +1600,7 @@ section.companion-contained {
     padding: 5px 50px;
     border: 1px solid rgba(95, 66, 169, 1);
     background: #ffffff;
-
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1399,17 +1610,14 @@ section.companion-contained {
     color: rgba(95, 66, 169, 1);
 }
 
-
 .champpp-btnn {
     padding-top: 35px;
 }
 
 .btn-championgirll {
-
     background-color: #5f42a9;
-
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 14px;
     line-height: 160%;
@@ -1419,11 +1627,9 @@ section.companion-contained {
     cursor: pointer;
     border: none;
     padding: 8px;
-
     text-decoration: none;
     padding: 10px 255px;
 }
-
 
 .input-wrapperpro {
     position: relative;
@@ -1436,7 +1642,7 @@ section.companion-contained {
     top: 8px;
     left: 12px;
     pointer-events: none;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
@@ -1446,17 +1652,15 @@ section.companion-contained {
 }
 
 .customprofile-textarea {
-    padding-top: 32px;
+   
     padding-left: 12px;
     height: 115px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding-top: 50px;
-
-
+   
 }
 
 /* Progress Bar Container */
@@ -1466,8 +1670,7 @@ section.companion-contained {
     gap: 10px;
     margin-bottom: 20px;
     height: 4px;
-    width: 590px;
-
+    width: 565px;
 }
 
 /* Individual Step Blocks */
@@ -1483,9 +1686,6 @@ section.companion-contained {
 .step-block.active {
     background-color: #5f42a9;
 }
-
-
-
 
 .form-input {
     position: relative;
@@ -1516,13 +1716,11 @@ section.companion-contained {
 }
 
 .champ-uploadprofile {
-
     gap: 30px;
     padding: 20px 100px;
 }
 
 /* second step css */
-
 .uploadsss {
     border: 1px solid #ccc;
     padding: 40px 10px;
@@ -1537,7 +1735,7 @@ section.companion-contained {
 }
 
 .showmore-heading h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 25px;
     line-height: 100%;
@@ -1548,7 +1746,7 @@ section.companion-contained {
 }
 
 .showmore-heading p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 160%;
@@ -1557,7 +1755,6 @@ section.companion-contained {
     vertical-align: middle;
     color: #1a0e25e0;
 }
-
 
 .form-input {
     width: 120px;
@@ -1611,42 +1808,45 @@ section.companion-contained {
 }
 
 .preview-box {
-    max-width: 150px;
-    min-height: 120px;
-    text-align: center;
+    width: 120px;
+    height: 120px;
+    /*border: 2px dashed #ccc;*/
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    flex-direction: column;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
 .preview-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    border-radius: 6px;
 }
 
 .form-input {
-    width: 150px;
+    display: inline-block;
+    margin: 10px;
     position: relative;
 }
 
-
-button.imgRemove {
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 12px;
+.imgRemove {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    background: #fff;
+    top: 3px;
+    left: 87px;
+    background: #ccccccc7;
+    color: #fff;
     border: none;
     border-radius: 50%;
-    padding: 5px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
-    color: #5f42a9;
+    font-size: 14px;
+    display: none;
 }
 
 .preview-box i {
@@ -1659,7 +1859,6 @@ button.imgRemove {
     color: #5f42a9;
 }
 
-
 .step-block {
     width: 30px;
     height: 5px;
@@ -1670,7 +1869,7 @@ button.imgRemove {
 }
 
 .step-block.active {
-    background-color: 5f42a9;
+    background-color: #5f42a9;
 }
 
 .step {
@@ -1682,12 +1881,7 @@ button.imgRemove {
 }
 
 /* ending second step */
-
-
-
 /* 3rd step css */
-
-
 .verfy-champ {
     border: 1px solid #ccc;
     padding: 60px 60px;
@@ -1698,7 +1892,7 @@ button.imgRemove {
 }
 
 .text-chmpverify h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 25px;
     line-height: 100%;
@@ -1708,33 +1902,29 @@ button.imgRemove {
     color: #1a0e25e0;
 }
 
-
 .text-chmpverify p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 12px;
-
     text-align: center;
     vertical-align: middle;
-
 }
 
 .nationalid-input {
-    padding: 10px;
+    padding: 20px;
     border: 2px dotted rgba(95, 66, 169, 1);
     border-radius: 20px;
-
+    margin-bottom: 20px;
 }
 
 .format-idpara {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 13px;
     line-height: 160%;
     letter-spacing: 0px;
     text-align: center;
     vertical-align: middle;
-
 }
 
 .thirdchamp-step {
@@ -1758,21 +1948,21 @@ button.imgRemove {
 }
 
 button.img-remove-btn.img-remove-btn {
-    position: absolute;
-    bottom: 120px;
+   position: absolute;
     right: -8px;
+    top: 0;
     border: none;
     border-radius: 50%;
     font-size: 12px;
     padding: 6px 10px;
 }
 
+  
 
 /* captcha css */
-
 .robot {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins';
     padding-top: 14px;
 }
 
@@ -1785,9 +1975,7 @@ button.img-remove-btn.img-remove-btn {
     align-items: center;
     margin: auto;
     margin-top: 30px;
-
 }
-
 
 .logo-captcha {
     display: block;
@@ -1803,7 +1991,7 @@ button.img-remove-btn.img-remove-btn {
 .captcha-text-tos {
     display: block;
     font-size: 9px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins';
     margin-left: 80px;
 }
 
@@ -1823,8 +2011,7 @@ button.img-remove-btn.img-remove-btn {
     background-color: #5f42a9 !important;
     border-color: #5f42a9;
 } */
-
-.captcha-checkbox input[type="checkbox"]:checked + .custom-checkmark::after {
+.captcha-checkbox input[type="checkbox"]:checked+.custom-checkmark::after {
     content: '';
     position: absolute;
     left: 5px;
@@ -1845,18 +2032,7 @@ button.img-remove-btn.img-remove-btn {
     margin: 0px 14px 0px 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* model profile */
-
 .modal-overlay {
     display: none;
     position: fixed;
@@ -1875,7 +2051,7 @@ button.img-remove-btn.img-remove-btn {
 }
 
 .modal-content h2 {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 20px;
     line-height: 126%;
@@ -1883,20 +2059,19 @@ button.img-remove-btn.img-remove-btn {
     text-align: center;
     vertical-align: middle;
     color: #1a0e25;
-
 }
 
 .modal-content p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     vertical-align: middle;
     color: #1a0e25;
 }
 
 .gotodashboard-btn {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     line-height: 160%;
@@ -1922,7 +2097,6 @@ button.img-remove-btn.img-remove-btn {
     padding-top: 20px;
 }
 
-
 .modal-close {
     position: absolute;
     top: 10px;
@@ -1947,9 +2121,37 @@ button.img-remove-btn.img-remove-btn {
 /* Login-form css */
 
 
+.otherwaysignin.text-center p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+.orloginbtn button {
+    border: none;
+    background: none;
+    padding: 10px 15px 10px 15px;
+    background: #FFF;
+    border-radius: 12px;
+    color: #5f42a9;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border: 1px solid #5f42a9;
+    margin-right:10px;
+}
+img.svggoogle {
+    width: 20px;
+    height: 19px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+
+
 
 .welcome-heading {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 35px;
     line-height: 100%;
@@ -1959,7 +2161,7 @@ button.img-remove-btn.img-remove-btn {
 }
 
 .login-para {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -1989,15 +2191,14 @@ button.img-remove-btn.img-remove-btn {
 }
 
 .login-btndiv {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
-
 
 a.btnform-login {
     background-color: #5f42a9;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     vertical-align: middle;
@@ -2007,9 +2208,7 @@ a.btnform-login {
     padding: 8px;
     width: 100px;
     text-decoration: none;
-
-    padding: 10px 250px;
-
+    padding: 10px 214px;
 }
 
 .Login-log {
@@ -2022,12 +2221,7 @@ a.btnform-login {
 }
 
 /* Ending css login  */
-
-
-
-
 /* Css Forgott Password */
-
 .forgot-password {
     padding: 50px 50px;
 }
@@ -2037,46 +2231,38 @@ a.btnform-login {
     padding-top: 130px;
 }
 
-
 .forgot-h {
     color: #1a0e25;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: -0.5px;
     vertical-align: middle;
-
 }
 
 .para-forgot {
     color: #1a0e25;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0px;
     vertical-align: middle;
-
 }
 
-a.btn-sendlink {
+button.btn-sendlink {
     background-color: #5f42a9;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     vertical-align: middle;
     color: #ffffff;
     cursor: pointer;
     border: none;
-    padding: 8px;
-    width: 100px;
     text-decoration: none;
-    padding: 10px 210px 10px 210px;
-
-
-
+    padding: 10px 15px 10px 15px;
 }
 
 .text-center.reset-link {
@@ -2088,14 +2274,7 @@ a.btn-sendlink {
 }
 
 /* Ending css forgot */
-
-
-
-
 /* start css new Create password */
-
-
-
 .new-password {
     padding: 50px 50px;
 }
@@ -2107,7 +2286,7 @@ a.btn-sendlink {
 
 .create-password h2 {
     color: #1a0e25;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
@@ -2116,7 +2295,7 @@ a.btn-sendlink {
 }
 
 .create-password p {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
@@ -2128,7 +2307,7 @@ a.btn-sendlink {
 a.reset-btnpaswrd {
     background-color: #5f42a9;
     border-radius: 12px;
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 600;
     font-size: 16px;
     vertical-align: middle;
@@ -2138,7 +2317,6 @@ a.reset-btnpaswrd {
     padding: 8px;
     text-decoration: none;
     padding: 10px 230px 10px 230px;
-
 }
 
 .reset-div.text-center {
@@ -2156,17 +2334,962 @@ a.reset-btnpaswrd {
 /* ending new password css */
 
 
+/* companion index page css  */
+
+/*.index-profile {*/
+/*    margin: auto;*/
+/*    padding-left: 620px;*/
+/*}*/
+
+a.btn.btn-sm.dropdown-toggle {
+    border: none;
+    
+}
+
+ul.dropdown-menu.show {
+    margin-left: -170px;
+    border: none;
+    margin-top: 8px;
+}
+
+
+/* profile */
+.body {
+    background-color: #cccccc24;
+}
+
+.input-group-text {
+    background-color: white;
+
+}
+
+.companion-profile {
+    padding: 10px 24px 0px 0px;
+
+}
+
+
+
+.card.profile-cardindex {
+    background: #FFF;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.05);
+    border: 1px solid #c6b7b745;
+}
+
+
+h5.card-title.title-profile {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(26, 14, 37, 1);
+}
+
+p.card-text.txt-profile {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    vertical-align: middle;
+    color: rgba(26, 14, 37, 1);
+}
+
+p.card-text.txt-profile span {
+     font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    vertical-align: middle;
+    color: #5f42a9;
+}
+
+img.icon-dashbord {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+
+
+
+.btndiv-profile {
+    text-align: center;
+}
+.card-body.prrofile-boddy {
+    padding: 10px 0px;
+}
+img.indexcompanion-imagesview {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card.profile-cardindex {
+    width: 100%;
+    height:auto;
+}
+img.index-iconsassocoiate {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+img.rate-indexone {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+img.start-gemsforimg {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+button.indexprofile-btn {
+    padding: 10px 60px 10px 60px;
+    border: none;
+    font-size: 13px;
+     font-family: 'Poppins';
+    color: #FFF;
+    font-weight: 500;
+    background: #5f42a9;
+    border-radius: 20px;
+}
+
+  .rating-index {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+
+/* filtering css */
+
+.filter-box h5 {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1a0e25;
+}
+
+
+.box-search {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: rgba(95, 66, 169, 1);
+    padding: 5px 8px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+span.box-search i {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.byname-search input.form-control {
+    padding: 10px;
+    font-size: 14px;
+     font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -1%;
+    vertical-align: middle;
+    border-radius: 11px;
+    border: 1px solid #e8e6ee;
+}
+
+
+.filter-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+strong {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    white-space: nowrap;
+}
+
+.btn-filter li {
+    border: 1px solid #e8e6ee;
+    border-radius: 10px;
+    color: rgba(26, 14, 37, 1);
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    list-style: none;
+    position:relative;
+}
+
+
+.btn-filter li:hover {
+    background: #e8e6ee;
+    cursor: pointer;
+    border: 1px solid #5f42a9;
+}
+.tag-btn.selected {
+    background-color:#e8e6ee;
+    border: 1px solid #5f42a929;
+    border-radius: 10px;
+}
+
+
+button.apply-btn {
+    border: none;
+    padding: 8px 25px;
+    background: #5f42a9;
+    color: #fff;
+    border-radius: 5px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+button.reset-btn {
+    border: none;
+    padding: 8px 25px;
+    background: #5f42a9;
+    color: #fff;
+    border-radius: 5px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+p.viewall-nxt {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #5f42a9;
+    padding-top: 10px;
+}
+
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color:#FFF;
+    background: #5f42a9;
+     padding: 10px 10px !important;
+
+}
+a.page-link {
+   
+    padding: 6px 9px !important;
+}
+.page-link {
+    border: 1px solid #5f42a9 !important;
+    color: #333;
+    /*transition: 0.3s ease;*/
+}
+
+.pagination .page-link {
+    border-radius: 50%;
+    background: #5f42a9;
+    color:#FFF;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins';
+
+}
+
+li.page-item {
+    padding:10px;
+    cursor: pointer;
+}
+
+
+
+.profile-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 15px;
+}
+
+.profile-info h5 {
+    margin-bottom: 5px;
+}
+
+.gems {
+    color: #8e44ad;
+    font-size: 14px;
+}
+
+.btn-purple {
+    background-color: #7e3ff2;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 16px;
+}
+
+ul.d-flex.mt-2.btn-filter {
+    margin: 0px;
+    padding: 0px;
+}
+.tag-btn {
+  list-style: none;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tag-btn input[type="checkbox"]:checked + img,
+.tag-btn input[type="checkbox"]:checked + span {
+  font-weight: bold;
+}
+
+.tag-btn label {
+  cursor: pointer;
+}
+
+input[type="checkbox"].selectbutton-index:checked + img,
+input[type="checkbox"].selectbutton-index:checked ~ * {
+  filter: brightness(0.8);
+}
+
+input[type="checkbox"].selectbutton-index:checked + * {
+  color: #fff;
+  /*background-color: #007bff;*/
+  /*border-color: #007bff;*/
+}
+
+
+.side.right {
+    position: relative;
+    right: 145px;
+    text-align: justify;
+}
+/* rating css */
+span.rating-index {
+    font-size: 15px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 10px; 
+    padding-top: 5px;
+}
+
+input.selectbutton-index {
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0; 
+   
+}
+
+
+/* endig css index compaign */
+
+
+
+/*  profile index companinon css */
+
+.card.indexcompainin-profiles.p-4 {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 2px 15px 15px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 20px;
+}
+
+img.icon-dashbord {
+    width: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.thumb-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.profile {
+    padding: 20px 20px;
+}
+
+img.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+body {
+    font-family:poppins;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #FFF !important;
+}
+.swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-grid.swiper-watch-progress.swiper-backface-hidden.swiper-thumbs img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.swiper.mySwiper2.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    height: 440px !important;
+     width: 100% !important; 
+}
+
+.mySwiper2 {
+    /*height: 50% !important;*/
+    width: 100%;
+    border-radius: 16px;
+}
+.mySwiper2 img.main-image {
+    height: 100%;
+}
+
+.mySwiper {
+    padding: 40px 0px;
+}
+
+.swiper {
+    width: 100%;
+    height:500px;
+
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height:600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 0px;
+}
+
+.swiper {
+    width: 100%;
+    /* height: 300px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.mySwiper2 {
+
+    width: 100%;
+}
+
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+}
+
+.swiper-dashboard .swiper-slide img {
+    width: 100%;
+
+    object-fit: cover;
+}
+.swiper-wrapper.swiper-dashboard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.swiper-slide.swiper-slide-active.swiper-slide-visible {
+    width: 100px;
+    height: 100px;
+}
+
+.mySwiper .swiper-slide {
+    border-radius: 8px;
+    /*opacity: 0.7;*/
+    transition: 0.3s;
+}
+
+
+.swiper {
+    width: 100%;
+}
+
+/* profile card */
+.profile-card {
+    padding-top: 25px;
+}
+
+.col-md-4.d-flex.nameuser h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.heding-txtprofile h3 {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    color: rgba(34, 30, 44, 1);
+}
+
+.heding-txtprofile p {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0%;
+    color: rgba(78, 71, 100, 1);
+}
+
+.bio-simpletxt h3 {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(34, 30, 44, 1);
+}
+
+.bio-simpletxt p {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: rgba(78, 71, 100, 1);
+}
+
+.nameuser p {
+     font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0%;
+    padding: 0px 10px;
+    white-space: nowrap;
+}
+
+.nameuser h6 {
+    /*font-size: 15px;*/
+    font-weight: 300;
+}
+
+.bio-simpletxt {
+    border-top: 1px solid rgba(235, 232, 238, 1);
+    padding: 20px 0px 0px 0px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.thumb-img.active {
+    border-color: #6f42c1;
+}
+
+.badge-custom {
+    background-color: rgb(95 66 169 / 8%);
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(95, 66, 169, 0.08);
+    list-style: none;
+}
+
+
+
+
+.section-title {
+    font-weight: 600;
+
+    margin-bottom: 15px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgba(34, 30, 44, 1);
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+img.icon-dashbord {
+    width: 20px;
+}
+
+.btnin-select {
+    border-bottom: 1px solid rgba(235, 232, 238, 1);
+    padding: 0px 0px 22px;
+}
+
+
+.mySwiper img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+h4.age-girl {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.bio-simpletxt p {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    color: rgba(78, 71, 100, 1);
+}
+
+.btn-book button {
+    background-color: #5736ac;
+    color: #FFF;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+     font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -1%;
+
+}
+
+img.modelunic-icon {
+    width: 20px;
+}
+
+.rates-hed {
+    padding: 10px 0px;
+}
+
+.rates-hed h4 {
+    font-size: 25px;
+    font-weight: 600;
+     font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.coffe-heding h5 {
+     font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.coffe-heding p {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+.rates-boxindex {
+    border: 1px solid #ebe8ee;
+    border-radius: 10px;
+}
+.text-center.nodata-text {
+    padding: 10px 15px;
+}
+.badge-dates {
+    padding: 10px;
+    border-bottom: 1px solid rgb(235 232 238);
+}
+
+button.btn-close.closebtn-indexprofilee {
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+
+.modal-content {
+    margin-top: 80px;
+}
+
+/* confirmation model */
+
+.heder-profileindem {
+    display: contents;
+
+}
+
+.modal-header.heder-profileindem img {
+    margin: auto;
+}
+
+.modal-header.heder-profileindem h5 {
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+    color: #1a0e25;
+}
+
+.modal-header.heder-profileindem p {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #1a0e25;
+}
+
+.modal-body.text-center.confirmgems-model h3 {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1a0e25;
+}
+
+.datetime-model h5 {
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1a0e25;
+}
+
+button.goto-btnmodel {
+    padding: 10px 50px;
+    border-radius: 12px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0px;
+    color: #5f42a9;
+    border: 1px solid #5f42a9;
+    background-color: #FFF;
+
+}
+
+button.goto-btnmodel:hover {
+    color: #FFF;
+    border: 1px solid #5f42a9;
+    background-color: #5f42a9;
+}
+
+
+
+/* rating profile css */
+.heading {
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #333333;
+    padding-left: 7px;
+}
+
+p.review-txt {
+    line-height: 30px;
+     font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 7px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: #ffc107;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 60%;
+    height: 10px;
+    background-color: #ffc107;
+    border-radius: 10px;
+
+}
+
+.bar-4 {
+    width: 30%;
+    height: 10px;
+    background-color: #ffc107;
+    border-radius: 10px;
+}
+
+.bar-3 {
+    width: 20%;
+    height: 10px;
+    background-color: #ffc107;
+    border-radius: 10px;
+}
+
+.bar-2 {
+    width: 18%;
+    height: 10px;
+    background-color:#ffc107;
+    border-radius: 10px;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 10px;
+    background-color: #ffc107;
+    border-radius: 10px;
+}
+.riview-boxindex.p-3 {
+    border: 1px solid rgba(249, 246, 255, 1);
+    background: rgb(242 240 248);
+    border-radius: 12px;
+}
+
+.content-boxxborder.mb-3.p-3 {
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+
+/* ending profile index compaign css */
+
+
 
 /* Footer css */
-
-footer.foot-footer {
-    padding-left: 90px;
-}
 
 .footer {
     background-color: rgba(95, 66, 169, 1);
     color: white;
     padding: 50px 0;
+    margin-top:18px;
 }
 
 .footer h5 {
@@ -2181,9 +3304,9 @@ footer.foot-footer {
     margin-bottom: 10px;
 }
 
-.footer a:hover {
-    color: white;
-}
+/*.footer a:hover {*/
+/*    color: white;*/
+/*}*/
 
 .footer-links {
     list-style: none;
@@ -2201,17 +3324,16 @@ footer.foot-footer {
     font-family: Inter;
     font-weight: 400;
     font-size: 16px;
-
 }
 
-.footer-links li a:hover {
-    color: #aaaaff;
-}
+/*.footer-links li a:hover {*/
+/*    color: #aaaaff;*/
+/*}*/
 
 .footer-border {
     border-right: 1px solid #7655c7;
     padding: 10px 35px;
-    height: 210px;
+    /*height: 210px;*/
     padding-left: 60px;
 }
 
@@ -2225,7 +3347,7 @@ footer.foot-footer {
 }
 
 .logo-descriptionfooter {
-    font-family: Poppins;
+     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, 1);
@@ -2236,8 +3358,7 @@ footer.foot-footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    padding: 10px 10px 10px 10px;
     margin-right: 10px;
     border: 1px solid #d4d4d8;
     border-radius: 50%;
@@ -2250,1342 +3371,423 @@ footer.foot-footer {
 .social-icons a:hover {
     background-color: #a084e8;
 }
+.social-footer {
+    padding-left: 20px;
+}
+
+
+
 
 
 /* ending css footer */
 
-
-
-
-
-
-/* Responsive css  */
+      
 /* Mobile devices css */
 @media (min-width: 300px) and (max-width: 767px) {
-    header.bg-purple-custom {
-        padding: 0px;
-    }
-
-    .navbar-toggler-icon {
-        width: 23px;
-        height: 23px;
-
-    }
-
-    img.logo-hedd {
-        width: 100px;
-    }
-
-    .navbar-collapse {
-        padding-top: 20px;
-    }
-
-    .login-navv {
-        padding-left: 90px;
-    }
-
-    ul.navbar-nav {
-        gap: 3px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    a.bbtn-loginn {
-        padding: 4px 20px;
-        font-size: 13px;
-    }
-
-    a.bbtn-registerr {
-        padding: 4px 20px;
-        font-size: 13px;
-    }
-
-    /* How its work devices css  section home*/
-
-    .Howit-works {
-        padding: 30px 40px 95px 30px;
-    }
-
-    .hero {
-
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .heading-parent {
-        font-size: 18px;
-    }
-
-    .sub-headingpara {
-        font-size: 12px;
-    }
-
-    img.frame-image {
-        width: 100%;
-        height: 100%;
-    }
-
-
-    .content-text.text-center {
-        margin-top: 100px;
-        margin-bottom: 25px;
-        position: relative;
-    }
-
-    .hero-btn {
-        padding: 7px 10px 7px 10px;
-        font-size: 12px;
-    }
-
-    .frame-heading {
-        font-size: 18px;
-        padding-bottom: 10px;
-    }
-
-
-    /* feature compaign devices css  section home */
-
-    .cards-featured h2 {
-        font-size: 18px;
-    }
-
-    .cards-featured p {
-        font-size: 12px;
-
-    }
-
-    .featured-companions {
-        background-color: #f9f5ff;
-    }
-
-    section.featured-companions {
-        background: rgba(147, 121, 216, 0.11);
-        padding: 20px 20px;
-    }
-
-    h5.card-title {
-        font-size: 16px;
-    }
-
-    p.card-text {
-        font-size: 10px;
-    }
-
-    .text-center.button-viewdiv {
-        padding-top: 10px;
-        padding-bottom: 0px;
-    }
-
-    .sign-viewbtn {
-        padding: 8px 10px 8px 10px;
-        font-size: 12px;
-    }
-
-
-    /* discover your best devices css  section home*/
-
-    .discover-yourbest h2 {
-        font-size: 18px;
-    }
-
-    .discover-yourbest p {
-        font-size: 12px;
-    }
-
-    .discover-yourbestcards {
-        padding: 0px;
-    }
-
-    h5.sec-text {
-        font-size: 14px;
-    }
-
-    .card-bodysec {
-        padding: 15px;
-    }
-
-    .sec-text {
-        font-size: 18px;
-        font-weight: 600;
-        color: #6b21a8;
-        margin: 0;
-    }
-
-    /* Gems card section devices css */
-
-    .heading-gems h5 {
-        font-size: 18px;
-    }
-
-    .heading-gems p {
-        font-size: 12px;
-    }
-
-    .rupeegems-txt h2 {
-        font-size: 24px;
-    }
-
-    .rupeegems-txt p {
-        font-size: 10px;
-    }
-
-
-    .gem-card {
-        padding: 15px;
-        width: 100%;
-        min-height: 100%;
-    }
-
-    .gem-img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .description {
-        font-size: 11px;
-    }
-
-    .btn-purplegem {
-        padding: 8px;
-        font-size: 10px;
-        width: 100px;
-    }
-
-    /* Faq devices css  */
-
-    .faq-text h2 {
-        font-size: 18px;
-    }
-
-    .faq-text p {
-        font-size: 12px;
-    }
-
-    .boxes {
-        width: 100%;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .faq-box h2 {
-        font-size: 14px;
-    }
-
-    .faq-box p {
-        font-weight: 400;
-        font-size: 10px;
-    }
-
-
-
-
-    /* login devices css  responsive */
-
-
-    .login-form {
-        padding: 24px 24px;
-    }
-
-    .Login-log {
-        padding-left: 30px;
-        padding-top: 20px;
-    }
-
-    .welcome-heading {
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 30px;
-    }
-
-    .login-para {
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 14px;
-    }
-
-    .login-btndiv {
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    a.btnform-login {
-        cursor: pointer;
-        padding: 5px 100px;
-        font-size: 12px;
-    }
-
-    .log.text-center.mt-3 a {
-        color: #5f42a9;
-        font-size: 12px;
-    }
-
-    .log.text-center.mt-3 {
-        font-size: 12px;
-    }
-
-
-
-
-
-
-    /* Registration devices css  responsive */
-
-
-    section.register-section {
-        padding: 24px 24px;
-    }
-
-    .btnform-register {
-        font-size: 14px;
-        padding: 7px 70px;
-    }
-
-    .register-form {
-        padding-left: 30px;
-        padding-top: 20px;
-    }
-
-    .register-heading {
-        font-size: 30px;
-    }
-
-    .para-register {
-        font-size: 14px;
-    }
-
-    .form-text-small {
-        font-size: 9px;
-    }
-
-    .form-label {
-        font-size: 14px;
-    }
-
-    .form-check {
-        display: flex;
-        padding-left: 30px;
-        margin-bottom: 13px;
-    }
-
-
-    /* OTP verify responsive css */
-
-
-    .otp-container {
-        padding: 24px 24px;
-        width: 100%;
-        margin: 0px;
-    }
-
-    .otp-para {
-        font-size: 13px;
-        white-space: normal;
-    }
-
-    .otp-heading {
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    a.otp-btn {
-        padding: 10px 100px;
-    }
-
-    .otp-input {
-        text-align: center;
-        font-size: 24px;
-        padding: 5px;
-        width: 40px;
-        margin: 0px;
-    }
-
-    .resend p {
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 12px;
-    }
-
-    .text-center.otp-btn {
-        padding-top: 50px;
-    }
-
-
-
-
-
-    /* Forgot your password responsive css mobile */
-
-
-    .forgot-password {
-        padding: 24px 24px;
-    }
-
-    .forgott-rht {
-        padding-left: 10px;
-        padding-top: 20px;
-    }
-
-    .forgot-h {
-        font-size: 24px;
-    }
-
-    .para-forgot {
-        font-size: 10px;
-    }
-
-    .text-center.reset-link {
-        margin-top: 20px;
-    }
-
-    a.btn-sendlink {
-        font-size: 14px;
-        padding: 10px 85px;
-        margin-right: 0px;
-    }
-
-    /* New Create password devices css*/
-
-    .new-password {
-        padding: 24px 24px;
-    }
-
-    .create-password {
-        padding-left: 10px;
-        padding-top: 20px;
-    }
-
-    .create-password h2 {
-        font-size: 24px;
-    }
-
-    .create-password p {
-        font-size: 12px;
-    }
-
-    .new-pass {
-        padding-top: 0px;
-    }
-
-    .reset-div.text-center {
-        padding-top: 20px;
-    }
-
-    a.reset-btnpaswrd {
-        padding: 10px 85px;
-        font-size: 14px;
-    }
-
-
-    /* Signup page devices css  responsive */
-
-
-    section.signup {
-        padding: 24px 24px;
-    }
-
-    .signup-left {
-        padding: 0px;
-    }
-
-    .content-sighnup {
-        padding-top: 30px;
-        padding-left: 0px;
-    }
-
-    .textright-sign h5 {
-        font-size: 16px;
-    }
-
-    .textright-sign h2 {
-        font-size: 18px;
-    }
-
-    .textright-sign p {
-        font-size: 10px;
-    }
-
-    .twoo-btns {
-        padding-top: 10px;
-    }
-
-    .title-iam {
-        font-size: 12px;
-    }
-
-    .description-assoite {
-        font-size: 7px;
-        text-align: justify;
-        font-weight: 500;
-    }
-
-    a.btnsign-continue {
-        padding: 7px 110px;
-    }
-
-
-    /* Assoiate profile devices css  responsive */
-
-
-    section.associateprofile {
-        padding: 24px 24px;
-    }
-
-    .assoiate-head h2 {
-        font-size: 18px;
-    }
-
-    .assoiate-head p {
-        font-size: 12px;
-    }
-
-    .assoiatee-right {
-        padding: 24px 24px;
-    }
-
-    .profile-assoiate p {
-        font-size: 10px;
-    }
-
-    .accordion-button.custom-toggle-icon {
-        font-size: 11px;
-    }
-
-    .btn-assoiateprofile {
-        padding: 10px 90px;
-    }
-
-    .modal-contentselect h2 {
-        font-size: 16px;
-    }
-
-    .modal-contentselect p {
-        font-size: 12px;
-    }
-
-    .modal-contentselect {
-        width: 90%;
-    }
-
-    .interest-buttons {
-        gap: 5px;
-    }
-
-
-
-    button#saveInterestBtn {
-        padding: 8px 10px;
-    }
-
-    button#clearallBtn {
-
-        padding: 8px 10px;
-    }
-
-    /* champion-profiledevices css  responsive */
-
-    .champion-head h2 {
-        font-size: 18px;
-    }
-
-    .champion-head p {
-        font-size: 12px;
-    }
-
-    .btn-championgirll {
-        padding: 7px 100px;
-    }
-
-    .customprofile-textarea {
-        font-size: 10px;
-    }
-
-    .upload-btn {
-        padding: 5px 40px;
-    }
-
-    .progress-step-bar {
-        width: 260px;
-    }
-
-    .form-input {
-        width: 200px;
-        height: 200px;
-    }
-
-
-
-    /* second step devices css  */
-
-    .showmore-heading h2 {
-        font-size: 20px;
-    }
-
-    .showmore-heading p {
-        font: 10px;
-    }
-
-    .image-upload-one {
-        padding: 20px;
-    }
-
-    .secondchamp-step {
-        padding-top: 45px;
-    }
-
-
-    /* third step devices css  */
-
-    .text-chmpverify h2 {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .text-chmpverify p {
-        font-size: 10px;
-    }
-
-    .verfy-champ {
-        padding: 30px 10px;
-    }
-
-    .format-idpara {
-        font-size: 8px;
-        padding: 5px
-    }
-
-    .preview-box p {
-        font-size: 12px;
-    }
-
-    .boxcap-container {
-        border-radius: 5px;
-        width: 100%;
-        align-items: center;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-    .robot {
-        font-size: 10px;
-    }
-
-    .captcha-container {
-        margin-left: 70px;
-    }
-
-    .logo-captcha {
-        margin-left: 0%;
-    }
-
-    .captcha-text-tos {
-        margin-left: 0px;
-    }
-
-    .boxcap-container [type="checkbox"] {
+header.bg-purple-custom { padding: 0;}
+.navbar-toggler-icon {  width: 23px; height: 23px;}
+img.logo-hedd {width: 100px;}
+a.nav-link{font-size:15px;}
+.login-navv {text-align: center;}
+ul.navbar-nav { gap: 3px; font-size: 16px; cursor: pointer;}
+a.bbtn-loginn,
+.bbtn-registerr {padding: 4px 20px;font-size: 13px;}
+.login-modal {margin-top: 80px;}
+.otherwaysignin.text-center {padding-top: 20px;}
+.otherwaysignin.text-center p {font-size: 12px;}
+.orloginbtn button {padding: 7px 7px 7px 7px;margin-right: 0px;font-size: 12px;}
+img.svggoogle {width: 15px;height: 15px; margin-right: 5px;}
+
+/* How its work devices css section home */
+.Howit-works {  padding: 30px 40px 95px 30px;}
+.hero { width: 100%; height: auto;}
+.heading-parent { font-size: 18px;}
+.sub-headingpara { font-size: 12px;}
+img.frame-image { width: 100%; height: 100%;}
+.content-text.text-center { margin-top: 100px; margin-bottom: 25px; position: relative;}
+.hero-btn { padding: 7px 10px;font-size: 10px;}
+.frame-heading { font-size: 18px; padding-bottom: 10px;}
+/* Feature campaign devices css section home */
+.cards-featured h2 {font-size: 18px;}
+.cards-featured p { font-size: 12px;}
+.featured-companions {background-color: #f9f5ff;}
+section.featured-companions { padding: 0px;}
+h5.card-title { font-size: 16px;}
+p.card-text {font-size: 10px;}
+.text-center.button-viewdiv { padding-top: 10px;  padding-bottom: 0;}
+.sign-viewbtn { padding: 8px 10px; font-size: 12px;}
+/* Discover your best devices css section home */
+.discover-yourbest h2 {font-size: 18px;padding-top: 20px;}
+.discover-yourbest p {  font-size: 12px;}
+.discover-yourbestcards { padding: 0;}
+h5.sec-text {font-size: 14px;}
+.card-bodysec {padding: 15px;}
+.sec-text {font-size: 18px;   color: #6b21a8; margin: 0;}
+/* Gems card section devices css */
+.heading-gems h5 { font-size: 18px;}
+.heading-gems p {font-size: 12px;}
+.rupeegems-txt h2 {font-size: 20px;}
+.rupeegems-txt p {font-size: 10px;}
+.gem-card { padding:17px; width: 100%;min-height: 100px}
+img.littlebit-card { width: 100px;object-fit: cover; display: block; margin: auto;}
+section.interestwith-gems {padding: 13px;margin-top: 20px;}
+.gemscard { padding: 0px; }
+.card.h-100 {width: 100%;}
+.faq-text h2 {font-size: 16px;}
+.faq-text p { font-size: 10px;}
+.boxes { width: 100%;padding: 0px;}
+.faq-box h2 { font-size: 14px; padding-top: 10px;}
+.faq-box p {font-size: 10px;padding: 5px; text-align: justify;}
+.card{margin:0px;}
+section.frequasked-questions {padding: 10px 10px;}
+
+.frequasked-parentdiv{padding-top:30px;border-radius: 10px 10px 10px 0px;}
+.faq-box { padding: 10px;}
+.description { font-size: 12px;white-space: nowrap;}
+.btn-purplegem {width: 120px; height: 30px;font-size: 12px;}
+.gemscard { gap: 20px;}
+.gem-img {width: 100px; height:65px;}
+section.discoverbest-companion { padding:0px;}
+.footer-border{padding:0px; border:none;}
+.footer { padding: 50px 20px; margin-top:15px;}
+.social-footer { padding: 0px;}
+i.fas.fa-eye-slash {font-size: 12px;}
+.social-icons {padding-right: 30px;}
+.hero {width: 100%; height: 100%;}
+.login-form {padding: 0px;}
+.Login-log { padding-left: 15px;padding-top: 20px;}
+.welcome-heading { font-size: 25px;}
+.login-para { font-size: 14px;}
+.Remember-me {font-size: 10px; white-space: nowrap;}
+.forgot-link .forgot-pass { font-size: 10px;white-space: nowrap;}
+a.btnform-login {padding: 8px 85px;font-size:12px;}
+.login-btndiv { padding-top: 0px; padding-bottom: 0px;}
+section.register-section{padding:0px;}
+
+h2#swal2-title {font-size: 20px;}
+div#swal2-html-container {font-size: 12px;}
+
+
+
+.register-form {padding-left: 10px;}
+.register-heading { font-size: 25px;padding-top: 20px;}
+.para-register { font-size: 14px;}
+a.btnform-register { padding: 10px 70px;}
+.filter-box {padding: 5px;}
+button.apply-btn {padding: 6px 16px 6px 16px;}
+button.reset-btn {padding: 6px 16px 6px 16px;} 
+h5.card-title.title-profile {font-size: 16px;}
+.card-body.prrofile-boddy {padding: 5px 2px;}
+p.card-text.txt-profile { font-size: 13px;}
+p.card-text.txt-profile span { font-size: 12px;}
+button.indexprofile-btn {padding: 7px 50px 7px 50px}
+.companion-profile {padding: 0px;}
+.profile {padding: 5px 10px;}
+.mySwiper .swiper-slide img {width: 65px; height: 90px;}
+.swiper.mySwiper.mt-3.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden.swiper-grid.swiper-watch-progress.swiper-thumbs {
+height: 100px;}
+.profile {padding: 10px 0px;}
+h4.age-girl {font-size: 14px;}
+.heding-txtprofile h3 { font-size: 14px;}
+.section-title { font-size: 14px;}
+.badge-custom { padding: 6px 10px;}
+.badge-dates {padding:5px 0px;}
+.btn-book button {font-size: 12px; padding: 7px 7px 7px 7px;}
+.coffe-heding h5 {font-size: 12px;}
+.coffe-heding p { font-size: 12px;}
+.reviews-start.ms-auto {white-space: nowrap; padding-top: 55px;text-align: end;font-size: 10px;}
+.bio-simpletxt p {font-size: 13px;text-align: justify;}
+.text-center.nodata-text h5 {font-size: 14px;}
+.rates-boxindex {padding: 10px;}
+.rates-hed h4 {  font-size: 14px;}
+.side {width:100px;margin-top: 0px;}
+.riview-boxindex.p-3{width:242px;}
+.heading {font-size: 17px;padding-left: 0px;}
+p.review-txt {font-size: 17px;}
+.otp-container { padding: 10px 0px;}
+.otp-heading {  font-size: 20px;}
+.otp-para { font-size: 12px;white-space: normal;padding: 0px;}
+.otp-input {font-size: 13px; padding: 10px; width: 37px;}
+.text-center.otp-btn{padding-top:30px;}
+button.otp-btn { padding: 10px 95px;}
+.otp-box{gap:0px}
+section.signup {padding: 10px 0px;}
+.content-sighnup { padding-top: 20px;padding-left:10px;}
+.textright-sign h5 {font-size: 20px;}
+.textright-sign h2 { font-size: 25px;}
+.twoo-btns {padding-top: 0px;}
+.assoiate-content { gap: 5px;}
+.title-iam {font-size: 14px;}
+.description-assoite { font-size: 11px;  text-align: left;}
+.assoiatee-right {padding-left:10px; padding-top: 20px;}
+.assoiate-head h2 {  font-size: 17px;}
+.accordion-button.custom-toggle-icon {font-size: 12px; padding: 8px 10px;}
+.btn-assoiateprofile {padding: 10px 100px;}
+.assoit-btnn { padding-top: 10px; padding-bottom:10px;}
+.modal-contentselect {padding: 25px 10px; width: 80%;}
+.modal-contentselect h2 {font-size: 14px;}
+.modal-contentselect p {font-size: 10px;}
+.modal-close { position: absolute; right: 0px; top: 0px;}
+button.clearall-btn {font-size: 11px;padding:4px 10px;}
+button.confirmm-selectbtn {font-size: 10px;padding:4px 10px}
+.gotodashboard-btn {font-size: 14px; padding: 8px;}
+section.associateprofile { padding: 10px 0px;}
+.champion-head h2 { font-size: 18px;}
+.champion-head p {font-size: 10px;}
+.progress-step-bar {gap: 0px;width: 260px;}
+.btn-championgirll {padding: 10px 95px;}
+.champpp-btnn {  padding-top: 15px;}
+.secondchamp-step { padding-top: 40px;}
+.verfy-champ { padding: 10px 5px; }
+.text-chmpverify h2 { font-size: 20px;}
+.boxcap-container {width: 100%;}
+.robot {font-size: 12px;}
+.logo-captcha { margin-left: 50%;}
+.captcha-text-tos {margin-left:60px;}
+.register-left img {display: none;}
+.index-profile.d-flex.gap-3 { justify-content: center;}
+.welcom-txt {font-size: 15px;}
+.sub-hedwelcom { font-size: 15px;}
+.login-modal-content h4 {font-size: 17px !important;}
+.login-modal-content p { font-size: 12px !important;}
+.login-modal-content a {padding: 8px 50px !important;}
+.logo-textfooter img {width: 60%;}
+.log.text-center.mt-3 {font-size: 10px;}  
+.verify-image img {display: none;}
+.profile-assoiate p {font-size: 8px; }
+.upload-btn {padding: 5px 35px;font-size:12px;}
+.form-label { font-size: 14px;}
+.form-control, .form-select {font-size: 12px;}
+.interest-btn {padding: 4px 4px;font-size: 10px;}
+.assoiate-head p {font-size: 10px;}
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {padding: 8px 8px !important;}
+.pagination .page-link {font-size: 15px;}
+a.page-link {padding: 4px 8px !important;}
+
+.login-log {padding-top: 10px;}
+.copyright-footer {font-size: 10px;}
+.social-icons a {font-size: 13px;padding: 8px 8px 8px 8px;margin-right: 10px;}
+.social-footer h5 {font-size: 16px;}
+.footer-links li a {font-size:14px;}
+.footer-border h5 { font-size: 16px;}
+.logo-descriptionfooter {padding-top: 10px;font-size: 12px;}
+.logo-textfooter {font-size: 20px;}
+.orloginbtn a {  font-size: 10px;padding: 5px 5px;}
+ .orloginbtn img {margin-right: 4px;width: 10px;}
+    
+
+
+
+
+.faqheading h3 {  font-size: 20px;}
+ .accordion-header.indexxfaq { padding: 10px 14px;font-size: 13px;}
+
+}
       
-        width: 25px;
-        height: 25px;
-        border: 2px solid #C1C1C1;
-        margin: 0px 14px 0px 14px;
-    }
+     
 
-    /* model ready  devices css */
-    .modal-content {
-        padding: 30px 10px;
-        max-width: 325px;
-    }
-
-    .modal-content p {
-        font-size: 10px;
-    }
-
-/* Hide default checkbox */
-.captcha-checkbox input[type="checkbox"] {
-    display: none;
-} */
-
-
-
-
-    /* footer devices css  */
-
-    footer.foot-footer {
-        padding: 0;
-    }
-
-    .social-icons {
-        margin-left: -36px;
-    }
-
-    .logo-descriptionfooter {
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 11px;
-    }
-
-    .logo-textfooter img {
-        width: 50%;
-        padding-bottom: 11px;
-    }
-
-    .footer-border {
-        border-right: 1px solid #7655c7;
-        height: 140px;
-    }
-
-    .quicc {
-        margin-top: 50px;
-    }
-
-
-
-
-
-
-
+@media screen and (min-width:768px) and (max-width:992px){
+    header.bg-purple-custom { padding: 0;}
+    .navbar-toggler-icon {  width: 23px; height: 23px;}
+    img.logo-hedd {width: 100px;}
+    a.nav-link{font-size:16px;}
+    .login-navv {text-align: center;}
+    ul.navbar-nav { gap: 3px; font-size: 16px; cursor: pointer;}
+    a.bbtn-loginn,
+    .bbtn-registerr {padding: 8px 20px;font-size: 15px;}
+    .welcom-txt {font-size: 15px;}
+    .sub-hedwelcom {font-size: 17px;}
+    .byname-search input.form-control {padding: 7px 7px;font-size: 13px;}
+    .heading-parent {font-size: 25px;}
+    .sub-headingpara { font-size: 14px;}
+    .hero-btn {font-size: 13px;}
+    .hero {height: 450px;}
+    .frame-heading{ font-size: 25px;}
+    .cards-featured.text-center h2 {font-size: 25px;}     
+    .cards-featured.text-center p {font-size: 14px;}   
+    .gem-card {width: 100%; height: auto; padding:20px;}
+    .gem-card img {width: 80px; height: 80px;}
+    .companion-profile{padding:0px;}
+    /*.card { width: 100%; height:auto; padding: 15px; margin: auto;}*/
+     button.apply-btn {padding: 5px 10px; font-size: 14px;}
+     button.reset-btn {padding: 5px 10px; font-size: 14px;}
+     .badge-dates {white-space: nowrap; padding:0px;}
+    .reviews-start.ms-auto { padding: 0px;font-size: 1px;}
+    .discover-yourbest h2 { font-size: 25px;}
+    .discover-yourbest p { font-size: 14px;}
+    .text-center.button-viewdiv {padding-top: 20px;  padding-bottom: 0px;}
+    .heading-gems h5 {font-size: 14px;font-size: 14px;}
+    .faq-box h2 {font-size: 20px;}
+    .faq-box p { font-size: 15px;}
+    .logo-textfooter img { width: 145px;}
+    .logo-descriptionfooter {font-size: 10px;}
+    .footer-border {padding:0px;padding-left:20px;  }
+    .social-icons a {margin-right: 0px;  padding: 7px;}
+    img.frame-image { width: 100%;height: auto;}
+    .Login-log {padding-left:10px;padding-top: 0px;}
+    .welcome-heading { font-size: 25px;}
+    .login-para{font-size:14px;}
+    .form-label { font-size: 16px; }
+    label.form-check-label.Remember-me.mb-0 {font-size: 13px;}
+    .forgot-link .forgot-pass{font-size:14px; }
+    a.btnform-login {padding: 10px 90px 10px 90px;}
+    .login-btndiv { padding-top: 0px;}
+    .log.text-center.mt-3 { font-size: 14px;}
+    .log.text-center.mt-3 a{font-size: 14px;}
+    a.btnform-register {font-size: 14px;padding:10px 150px;}
+    h2.register-heading { font-size: 25px;}
+    p.para-register {font-size: 14px;}
+    .register-left img { display: none;}
+    .register-form { width: 100%;padding: 0px;}
+    .footer-border h5 {font-size: 14px;}
+    .social-footer h5 {font-size: 14px;}
+    .otp-container { padding: 10px 10px;}
+    .otp-para { font-size: 13px; padding: 0px; white-space: normal;}
+    .otp-box {gap:0px;}
+    .text-center.otp-btn {padding-top: 25px;}
+    button.otp-btn { padding: 7px 80px;}
+    section.signup { padding: 20px 10px;}
+    .content-sighnup { padding-top: 10px;padding-left: 10px;}
+    .textright-sign h2 { font-size: 25px;}
+    .twoo-btns { padding-top: 0px;}
+    .signup-left {padding-top: 85px;padding-bottom: 85px;}
+    img.image-assoiate {display: none;}
+    .assoiatee-right { width: 100%; padding-top: 30px;padding-left:0px;}
+    .assoit-btnn { padding-top: 30px;padding-bottom: 30px;}
+    img.card-img-top { width: 100%; height: 165px;object-fit: cover;}
+    /*compainion index*/
+    .filter-box { padding: 3px 3px;}
+    h5.card-title.title-profile { font-size: 16px;}
+    p.card-text.txt-profile {font-size: 14px;}
+    button.indexprofile-btn {  padding: 7px 60px 7px 60px;}
+    .card-body.prrofile-boddy { padding: 4px 10px;}
+    .mySwiper .swiper-slide img { width: 100%px;height: 70px;}
+    .btn-championgirll {padding:10px 120px;} 
+    .register-form {width: 100%;}
+    .register-left img {display: none;}
+    .rates-hed h4 {font-size: 20px;}
+    .coffe-heding h5 {   padding: 8px 10px;font-size: 14px;}
+    .otp-heading {font-size: 20px;}
+    .otp-input { width: 40px; padding: 5px;}
+    .orloginbtn a {font-size: 14px;padding: 7px 10px;}
+   
+    
+    
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    img.logo-hedd {
-        width: 100%;
-        height: 100%;
-    }
-
-    a.nav-link {
-        font-size: 11px;
-        font-weight: 500;
-        color: #FFFFFF;
-    }
-
-    .login-navv {
-        display: contents;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center !important;
-        gap: 10px;
-
-    }
-
-    ul.navbar-nav {
-        gap: 0px;
-        padding-left: 10px;
-    }
-
-
-
-
-
-    .bbtn-loginn {
-        /* width: 100px; */
-        color: #ffffff;
-        font-family: "Crimson Pro", serif;
-        font-weight: 700;
-        font-size: 16px;
-    }
-
-    .bbtn-registerr {
-        width: 100px;
-        padding: 10px 15px;
-        font-family: "Crimson Pro", serif;
-        font-weight: 700;
-        font-size: 16px;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-    }
-
-
-    .navbar-toggler {
-        margin-left: auto;
-    }
-
-
-
-    header.bg-purple-custom {
-        padding: 10px 0;
-    }
-
-    /* How its work tablet css */
-
-    .frame-heading {
-        font-family: Crimson Pro;
-        font-weight: 600;
-        font-size: 35px;
-    }
-
-    img.frame-image {
-        width: 100%;
-        height: 100%;
-    }
-
-    /* featiure compaign tablet css */
-
-
-    .cards-featured h2 {
-        font-family: Crimson Pro;
-        font-weight: 600;
-        font-size: 35px;
-    }
-
-    .cards-featured p {
-        font-family: Crimson Pro;
-        font-weight: 300;
-        font-size: 20px;
-    }
-
-
-
-    /* Discover yourbest tablet css */
-    .discover-yourbest h2 {
-        font-family: Crimson Pro;
-        font-weight: 600;
-        font-size: 35px;
-    }
-
-    .discover-yourbest p {
-        font-family: Crimson Pro;
-        font-weight: 300;
-        font-size: 20px;
-    }
-
-
-
-    /* Express Interests with Gems tablet css */
-
-    .heading-gems h5 {
-        font-family: Crimson Pro;
-        font-weight: 600;
-        font-size: 35px;
-    }
-
-    .heading-gems p {
-        font-family: Crimson Pro;
-        font-weight: 300;
-        font-size: 20px;
-    }
-
-
-    /* Frequently question tablet  */
-
-    .faq-text h2 {
-        font-weight: 600;
-        font-size: 35px;
-    }
-
-    .faq-text p {
-        font-family: Crimson Pro;
-        font-weight: 300;
-        font-size: 18px;
-    }
-
-    .faq-box h2 {
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 34px;
-    }
-
-
-    /* Login tablet css */
-
-    .login-form {
-        padding: 50px 50px;
-    }
-
-    .login-log {
-        width: 100%;
-        height: 100%;
-    }
-
-    .welcome-heading {
-        font-size: 40px;
-    }
-
-    .Login-log {
-        width: 100%;
-        padding-top: 60px;
-        padding-left: 0px;
-    }
-
-    .login-para {
-        font-size: 16px;
-    }
-
-    .login-btndiv {
-        padding-top: 20px;
-        padding-bottom: 5px;
-    }
-
-    a.btnform-login {
-        padding: 10px 290px;
-        font-size: 18px;
-    }
-
-    .form-label {
-        font-size: 20px;
-    }
-
-    .form-control {
-        font-size: 20px;
-    }
-
-    .form-check-label {
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    .Remember-me {
-        font-size: 18px;
-    }
-
-    .forgot-link .forgot-pass {
-        font-size: 18px;
-    }
-
-    .log.text-center.mt-3 {
-        font-size: 18px;
-    }
-
-    .log.text-center.mt-3 a {
-        color: #5f42a9;
-        font-size: 18px;
-    }
-
-
-    /* Registration tablet css  */
-
-    section.register-section {
-        padding: 50px 50px;
-    }
-
-    .register-form {
-        width: 100%;
-        padding-top: 60px;
-        padding-left: 0px;
-    }
-
-    .register-heading {
-        font-size: 40px;
-    }
-
-    .para-register {
-        font-size: 16px;
-    }
-
-    .form-text-small {
-        font-size: 14px;
-    }
-
-    .form-check-label {
-        font-size: 18px;
-    }
-
-    .btnform-register {
-        padding: 10px 260px;
-        font-size: 18px;
-    }
-
-    .registraionform-btndiv.text-center {
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-
-    .login-link {
-        font-size: 18px;
-    }
-
-
-    /* OTP verify tablet css */
-
-
-    .verify-image.mb-4.mb-md-0 {
-        width: 100%;
-        height: 100%;
-    }
-
-    .otp-container {
-        padding: 40px;
-        margin: 0px;
-    }
-
-    .otp-heading {
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 35px;
-        white-space: nowrap;
-        justify-content: center;
-    }
-
-    .otp-box {
-        justify-content: flex-start;
-    }
-    .otp-text {
-        padding-left: 50px;
-    }
-    .resend {
-        margin-top: 20px;
-        text-align: center;
-        white-space: nowrap;
-        padding-left: 35px;
-    }
-    .text-center.otp-btn {
-        padding-top: 40px;
-    }
-    a.otp-btn {
-        padding: 10px 186px;
-    }
-    .otp-para {
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 18px;
-        white-space: nowrap;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Forgot your password responsive css tablet */
-
-    .forgot-password {
-        padding: 50px 50px;
-    }
-
-    .forgot {
-        width: 100%;
-        height: 100%;
-    }
-
-    .forgott-rht {
-        padding-top: 30px;
-        width: 100%;
-    }
-
-    .forgot-h {
-        font-size: 35px;
-    }
-
-    .para-forgot {
-        font-size: 18px;
-    }
-
-    .text-center.reset-link {
-        margin-top: 30px;
-    }
-
-    a.btn-sendlink {
-        font-size: 16px;
-        padding: 10px 245px;
-        margin-right: 0px;
-    }
-
-    /* New paassword tablet css */
-
-
-    .create-password {
-        padding-left: 10px;
-        padding-top: 30px;
-        width: 100%;
-    }
-
-    .create-password h2 {
-        font-size: 35px;
-    }
-
-    .create-password p {
-        font-size: 18px;
-    }
-
-    .form-label {
-        font-size: 22px;
-    }
-
-    .form-control {
-        font-size: 18px !important;
-    }
-
-    .reset-div.text-center {
-        padding-top: 30px;
-    }
-
-    a.reset-btnpaswrd {
-        padding: 10px 250px;
-    }
-
-    /* Signup page tablet css responsive */
-
-    section.signup {
-        padding: 50px 50px;
-    }
-
-    .signup-left {
-        width: 100%;
-        height: 100%;
-    }
-
-    .right-signup {
-        width: 100%;
-
-    }
-
-    .content-sighnup {
-        padding-top: 20px;
-        padding-left: 0px;
-    }
-
-    .textright-sign h5 {
-        font-size: 25px;
-    }
-
-    .textright-sign h2 {
-        font-size: 35px;
-    }
-
-    .textright-sign p {
-        font-size: 18px;
-    }
-
-    .title-iam {
-        font-size: 22px;
-    }
-
-    .twoo-btns {
-        padding-top: 15px;
-    }
-
-    .description-assoite {
-        font-size: 16px;
-    }
-
-    a.btnsign-continue {
-        padding: 10px 280px;
-        font-size: 18px;
-    }
-
-
-
-    /* Assoiate profile tablet responsive */
-
-    section.associateprofile {
-        padding: 50px 50px;
-        background: #ffffff;
-    }
-
-    .assoiate-left {
-        width: 100%;
-        height: 100%;
-    }
-
-    .assoiatee-right {
-        width: 100%;
-        padding-left: 10px;
-        padding-top: 45px;
-    }
-
-    .assoiate-head h2 {
-        font-size: 35px;
-    }
-
-    .assoiate-head p {
-        font-size: 18px;
-    }
-
-    .profile-assoiate p {
-        font-size: 16px;
-    }
-
-    .btn-assoiateprofile {
-        padding: 10px 265px;
-        font-size: 18px;
-    }
-
-    .accordion-button.custom-toggle-icon {
-        font-size: 16px;
-    }
-
-
-    /* companion tablet css */
-
-    .championn-left {
-        width: 100%;
-        height: 100%;
-    }
-
-    .champion-head h2 {
-        font-size: 35px;
-    }
-
-    .champion-head p {
-        font-size: 18px;
-    }
-
-    .form-control {
-        font-size: 16px;
-    }
-
-    .btn-championgirll {
-        font-size: 18px;
-        padding: 10px 250px;
-    }
-
-    .progress-step-bar {
-        width: 645px;
-    }
-
-    .upload-btn {
-        font-size: 16px;
-    }
-
-    /* second step tablet */
-
-    .showmore-heading h2 {
-
-        font-size: 35px;
-    }
-
-    .showmore-heading p {
-        font-size: 17px;
-    }
-
-    .image-upload-one {
-        padding: 10px 70px;
-    }
-
-    .secondchamp-step {
-        padding-top: 70px;
-    }
-
-    /* thirdstep tablet */
-
-    .text-chmpverify h2 {
-        font-size: 35px;
-    }
-
-    .text-chmpverify p {
-        font-size: 17px;
-    }
-
-    .preview-box p {
-        font-size: 17px;
-    }
-
-    .format-idpara {
-        font-size: 16px;
-    }
-
-    /* popup model tabler */
-
-    .modal-content h2 {
-        font-size: 30px;
-    }
-
-    .modal-content p {
-        font-size: 16px;
-    }
-
-    .modal-content {
-        max-width: 645px;
-        height: 395px;
-    }
-
-    .modal-close {
-        top: 0px;
-        right: 20px;
-        font-size: 55px;
-    }
-
-
-
-    /* Footer tablet responsive */
-
-    footer.foot-footer {
-        padding-left: 0px;
-    }
-
-    .logo-descriptionfooter {
-        font-family: Poppins;
-        font-weight: 400;
-        font-size: 15px;
-        color: rgba(255, 255, 255, 1);
-        text-align: justify;
-        padding-top: 11px;
-    }
-
-    .footer-border {
-        border-right: 1px solid #7655c7;
-        padding-left: 10px;
-    }
-
-    .quicc {
-        padding-left: 0 !important;
-    }
-
-    .footer .row {
-        text-align: center;
-    }
-
-    .social-icons {
-        gap: 0px;
-        margin: 0px;
-        border-radius: 50%;
-        padding: 0px;
-    }
-
-    .social-icons {
-        margin-left: 0px;
-    }
-
-    .social-icons a {
-        font-size: 16px;
-        border-radius: 50%;
-        padding: 10px;
-    }
+  
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px){
+       
+    a.btnform-login {padding: 10px 150px;font-size: 14px;}
+    .gem-card{ width:100%;}
+    a.nav-link {font-size: 18px;}
+    a.bbtn-registerr { padding: 7px 20px; font-size: 19px;}
+    .card { width: 200px; padding: 20px;}
+    a.btnform-register{  padding:10px 270px;}
+    img.logo-hedd { width: 180px;}
+    a.nav-link { font-size: 18px;}
+    .login-navv {  display: flex;padding-left:0px;}
+    a.bbtn-registerr {font-size: 16px;}
+    .heading-parent {font-size: 35px;} 
+    .sub-headingpara {font-size: 17px;}
+    h1.frame-heading{font-size: 30px; }
+    .cards-featured.text-center.p { font-size: 18px;}
+    h5.card-title {font-size: 16px; white-space: nowrap;}
+    p.card-text { font-size: 13px;}
+    .text-center.button-viewdiv { padding-top: 25px; padding-bottom: 0px;}
+    .text-center.heading-gems p {  font-size: 16px;}
+    .frequasked-parentdiv { padding-top: 50px;}
+    .register-form {padding-left: 0px; width:100%;}
+    section.register-section {padding: 20px 40px;}
+    
+    .filter-box {padding: 0px;}
+    img.frame-image {width: 100%;height: auto;} 
+    .otp-para {font-size: 15px;white-space: normal;}
+    /*compaignindex*/
+    button.indexprofile-btn {padding: 5px 20px 5px 20px; white-space: nowrap; font-size: 12px;}
+    .card.profile-cardindex { width: 100%; height: auto; padding:8px;}
+    img.indexcompanion-imagesview { width: 100%; height: 300px;object-fit: cover;}
+    .card-body.prrofile-boddy {padding: 10px 2px;}
+    h5.card-title.title-profile {font-size: 12px;}
+    span.rating-index {font-size: 12px;}
+    p.card-text.txt-profile {  font-size: 12px;}
+    p.card-text.txt-profile span {font-size: 12px;}
+    .tag-btn {padding: 4px 6px;}
+       .filter-box { padding: 8px 1px;}
+    .btn-championgirll {padding:10px 120px;}    
+    .register-left img {display: none;}
+       
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1500px){
+    .navbar-nav, ul.navbar-nav {white-space: nowrap !important; font-size: 20px !important;  gap: 20px;}
+    a.btnform-login{padding:10px 150px;}
+    .login-btndiv {padding:0px;}
+    .heading-parent{  font-size:25px;}
+    .sub-headingpara{font-size:14px;}
+    .frame-heading{  font-size:25px;}
+    .cards-featured h2{  font-size:25px;}
+    .cards-featured p{ font-size:14px;}
+    h5.card-title{ font-size:20px;}
+    .discover-yourbest h2{font-size:25px;}
+    .discover-yourbest p{font-size:14px;}
+    .heading-gems h5{font-size:25px;}
+    .faq-text h2 { font-size:25px;}
+    .faq-text p{  font-size:14px;}
+    .welcome-heading{ font-size:30px;}
+    .register-heading { font-size:30px;}
+    a.bbtn-loginn { margin-left: 215px; font-size: 16px;}
+    .bbtn-registerr { padding: 7px 20px;}
+    /*login */
+    .login-form { padding: 20px;}
+    /*register*/
+    a.btnform-register{padding:10px 100px 10px 100px;}
+    .otp-container { padding: 10px 10px;}
+    .otp-heading {font-size: 25px;}
+    .otp-para {font-size: 17px;white-space: normal;}
+    .otp-input {width: 45px;height: 45px;}
+    button.otp-btn {  font-size: 14px;padding: 8px 100px 8px 100px;}
+    resend p {font-size: 20px;}
+    .text-center.otp-btn {padding-top: 25px;}
+    .filter-box {padding:10px;}
+    img.indexcompanion-imagesview { width: 100%; height: 200px; object-fit: cover;}
+    .card.profile-cardindex {width: 100%; height: 350px;  object-fit: cover;}
+    button.indexprofile-btn { padding: 8px 20px;font-size: 14px;white-space: nowrap;}
+    .card-body.prrofile-boddy { padding: 10px 0px;}
+    h5.card-title.title-profile {font-size: 14px; letter-spacing: 0px; line-height: 15px;}
+    p.card-text.txt-profile {  font-size: 13px;  line-height: 16px;}
+    p.card-text.txt-profile span { font-size: 11px;  line-height: 17px;}
+    .text-center.nodata-text { padding: 10px 0px;}
+    .profile {padding: 20px 0px;}
+    .login-btndiv.text-center { padding-top: 20px;}
+    .btn-assoiateprofile { padding: 10px 130px 10px 130px;}
+    .assoit-btnn { padding-top: 10px;}
+    .btn-championgirll {padding:10px 120px;} 
+    .progress-step-bar {gap: 2px;height: 4px;width: 445px;}
+    .champion-head h2 {font-size: 20px;}
+    .champion-head p {font-size: 12px;}
+    .col-md-6.championn-left.d-flex.align-items-center.justify-content-center { margin-top: -125px;}
+    .col-md-6.assoiate-left.d-flex.align-items-center.justify-content-center {margin-top: 20px;}
+    .footer {margin-top: 40px;}
+    header.bg-purple-custom {padding: 5px;}
+ .welcom-txt { font-size: 16px;}
+ .otherwaysignin.text-center p {padding-top: 20px;}
+  
+
+   
+    
+    
 
 }
+   
+     @media (min-width: 1500px) {
+    button.indexprofile-btn {padding: 10px 50px 10px 50px;}
+    
+}
+
+      

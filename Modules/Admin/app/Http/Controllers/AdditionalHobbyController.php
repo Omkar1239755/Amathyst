@@ -1,104 +1,95 @@
 <?php
-
 namespace Modules\Admin\Http\Controllers;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\AdditionalHobbie;
-
 class AdditionalHobbyController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        return view('admin::index');
+    
+    public function index() {
+     $hobbies = AdditionalHobbie::all();
+     return view('admin::additional-hobbie.index',compact('hobbies'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
+    
+    
     public function create()
     {
-        return view('admin::create');
+      return view('admin::additional-hobbie.create');
     }
+    
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request) {}
-
-    /**
-     * Show the specified resource.
-     */
-    public function show($id)
+    public function store(Request $request)
     {
-        return view('admin::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        return view('admin::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, $id) {}
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($id) {}
-
-public function additionalHobbieView(){
-
-    $data = AdditionalHobbie::all();
-
-return view('admin::admin.additional-hobbie',compact('data'));
-
-}
-
-
-public function additionalHobbieViewStore(Request $request)
-{
- 
-    $validatedData = $request->validate([
-        'hobby_name' => 'required'
         
-    ]);
-
-
-
-    // Check if the request has a file and process the image
-    if ($request->hasFile('hobby_image')) {
-        $image = $request->file('hobby_image');
-        $imageName = time() . '_' . $image->getClientOriginalName();
-        $image->move(public_path('uploads/additional_hobbies'), $imageName);
+        $validatedData = $request->validate([
+            'additional_hobbie' => 'required|string',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        
+      if($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('uploads/additional_hobbies'), $imageName);
+        }
+    
+        AdditionalHobbie::create([
+            'additional_hobbie' => $validatedData['additional_hobbie'],
+            'image' => $imageName ?? null,
+        ]);
+    
+        return redirect()->route('additionalHobbie.index')->with('success','Addional Hobbie Created Successfully');
     }
-
-
-    // Save data to database
-    AdditionalHobbie::create([
-        'additional_hobbie' => $validatedData['hobby_name'],
-        'image' => $imageName ?? null,
-    ]);
-
-    // Return a success response
-    return response()->json([
-        'success' => true,
-        'message' => 'additional Hobby  added successfully!',
-    ]);
-}
-
-
-
-
-
-
-
+    
+    
+    public function delete($id)
+    {
+        $hobbie=AdditionalHobbie::find($id);
+        if ($hobbie && $hobbie->image) {
+         $imagePath = public_path('uploads/additional_hobbies/' . $hobbie->image);
+         if (file_exists($imagePath)) {
+                unlink($imagePath); 
+            }
+        }
+       AdditionalHobbie::find($id)->delete();
+       return redirect()->route('additionalHobbie.index')->with('success','Addional Hobbie Delete Successfully');
+    }
+    
+    public function edit(Request $request)
+    {
+        $hobbie= AdditionalHobbie::findOrFail($request->id);
+        return view('admin::additional-hobbie.edit',compact('hobbie'));
+    }
+    
+    public function update(Request $request,$id)
+    {
+       
+        
+       $validatedData = $request->validate([
+            'additional_hobbie' => 'required|string',
+            
+        ]);
+       
+        $hobbie = AdditionalHobbie::findOrFail($request->id);
+        if ($hobbie->image) {
+            $oldImagePath = public_path('uploads/additional_hobbies/' . $hobbie->image);
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
+            }
+        }
+        
+      
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('uploads/additional_hobbies'), $imageName);
+        }
+        
+        $hobbie->update([
+            'additional_hobbie' => $validatedData['additional_hobbie'],
+            'image' => $imageName ?? $hobbie->image,
+        ]);
+    
+        return redirect()->route('additionalHobbie.index')->with('success','Additional Hobbie Updated Successfully');
+    }
+    
 }

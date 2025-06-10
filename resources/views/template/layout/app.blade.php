@@ -1,0 +1,6 @@
+@yield('css')
+@include('template.include.header')
+@include('template.include.sidebar')
+@yield('content')
+@include('template.include.footer')
+@yield('script')

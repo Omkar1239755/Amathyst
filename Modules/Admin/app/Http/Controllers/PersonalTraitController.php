@@ -1,97 +1,91 @@
 <?php
-
 namespace Modules\Admin\Http\Controllers;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\PersonalTrait;
-
 class PersonalTraitController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        return view('admin::index');
+    
+    public function index() {
+       $traits = PersonalTrait::all();
+       return view('admin::personal-trait.index',compact('traits'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
+    
     public function create()
     {
-        return view('admin::create');
+      return view('admin::personal-trait.create');
     }
+    
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request) {}
-
-    /**
-     * Show the specified resource.
-     */
-    public function show($id)
+    public function store(Request $request)
     {
-        return view('admin::show');
+        
+        $validatedData = $request->validate([
+            'personal_trait' => 'required',
+             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        
+      if($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('uploads/personaltrait'), $imageName);
+        }
+    
+        PersonalTrait::create([
+            'personal_trait' => $validatedData['personal_trait'],
+            'image' => $imageName ?? null,
+        ]);
+    
+        return redirect()->route('personal-trait.index')->with('success','Trait Created Successfully');
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
+    
+    
+    public function delete($id)
     {
-        return view('admin::edit');
+        $trait=PersonalTrait::find($id);
+        if ($trait && $trait->image) {
+         $imagePath = public_path('uploads/personaltrait/' . $trait->image);
+         if (file_exists($imagePath)) {
+                unlink($imagePath); 
+            }
+        }
+       PersonalTrait::find($id)->delete();
+       return redirect()->route('personal-trait.index')->with('success','Trait Deleted Successfully');
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, $id) {}
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($id) {}
-
-        public function personaltraitsView() {
-            $data = PersonalTrait::all();
-
-            return view('admin::admin.personal-trait',compact('data'));       
+    
+    public function edit(Request $request)
+    {
+        $trait= PersonalTrait::findOrFail($request->id);
+        return view('admin::personal-trait.edit',compact('trait'));
+    }
+    
+    public function update(Request $request,$id)
+    {
+       
+        $validatedData = $request->validate([
+            'personal_trait' => 'required',
+        ]);
+       
+        $trait = PersonalTrait::findOrFail($request->id);
+        if ($trait->image) {
+            $oldImagePath = public_path('uploads/personaltrait/' . $trait->image);
+            if (file_exists($oldImagePath)) {
+                unlink($oldImagePath);
             }
-    
-        public function personaltraitsViewStore(Request $request)
-        {  
-            // Validate the incoming data
-            $validatedData = $request->validate([
-                'trait_name' => 'required'
-                
-            ]);
-    
-            // Check if the request has a file and process the image
-            if ($request->hasFile('trait_image')) {
-                $image = $request->file('trait_image');
-                $imageName = time() . '_' . $image->getClientOriginalName();
-                $image->move(public_path('uploads/personaltrait'), $imageName);
-            }
-        
-    
-            // Save data to database
-            PersonalTrait::create([
-                'personal_trait' => $validatedData['trait_name'],
-                'image' => $imageName ?? null,
-            ]);
-        
-            // Return a success response
-            return response()->json([
-                'success' => true,
-                'message' => 'Personal Traits added successfully!',
-            ]);
         }
         
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $image->move(public_path('uploads/personaltrait'), $imageName);
+        }
+        
+           $trait->update([
+            'personal_trait' => $validatedData['personal_trait'],
+            'image' => $imageName ??$trait->image,
+        ]);
     
-
-
-
+        return redirect()->route('personal-trait.index')->with('success','Trait Updated Successfully');
+    }
+    
 }
